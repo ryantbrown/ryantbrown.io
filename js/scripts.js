@@ -10,23 +10,26 @@
 			$('.content').addClass('on');
 		});
 
-		$(".typed").typed({
-			strings: [
-				"PHP",
-				"frontend",
-				"JavaScript",
-				"Python",
-				"systems",
-				"full stack",
-			],
-			typeSpeed: 100,
-			startDelay: 0,
-			backSpeed: 50,
-			backDelay: 1500,
-			callback: function() {
-				$('.typed-cursor').remove();
-			}
-		});
+		setTimeout(function(){
+			$(".typed").typed({
+				strings: [
+					"Interactive",
+					"PHP",
+					"Frontend",
+					"JavaScript",
+					"Full Stack"
+				],
+				typeSpeed: 100,
+				startDelay: 0,
+				backSpeed: 50,
+				backDelay: 1500,
+				callback: function() {
+					$('.typed-cursor').remove();
+				}
+			});
+		}, 2000);
+
+
 
 		$('[data-toggle="tooltip"]').tooltip();
 

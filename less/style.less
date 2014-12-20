@@ -285,15 +285,24 @@ footer {
         top: 0;
         left: 0;
         padding: 35px;
-        background-color: transparent;
+        background-color: rgba(0,0,0,0.5);
         transition: background-color .2s ease-out;
         border-radius: 8px;
       }
       &:hover {
         .overlay {
-          background-color: rgba(0,0,0,0.3);
+          background-color: rgba(0,0,0,0.8);
         }
       }
+      &.nobg {
+        .overlay {
+          background-color: transparent;
+          &:hover {
+            background-color: rgba(0,0,0,0.3);
+          }
+        }
+      }
+
       h2 {
         font-size: 20px;
         color: #eee;

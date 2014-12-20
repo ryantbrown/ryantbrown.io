@@ -6857,11 +6857,17 @@ footer p.copyright {
   top: 0;
   left: 0;
   padding: 35px;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
   transition: background-color 0.2s ease-out;
   border-radius: 8px;
 }
 .content .posts .article:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.content .posts .article.nobg .overlay {
+  background-color: transparent;
+}
+.content .posts .article.nobg .overlay:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 .content .posts .article h2 {
