@@ -7365,6 +7365,7 @@ h1.listing-title.workflow span {
 }
 .post-content .post-body img {
   max-width: 100%;
+  border: 1px solid #eee;
 }
 .post-content .post-footer {
   margin-top: 40px;
