@@ -6618,6 +6618,9 @@ button.close {
     display: none !important;
   }
 }
+.post-text .crayon-syntax {
+  margin-bottom: 40px !important;
+}
 .post-text .crayon-syntax .crayon-main .crayon-table td {
   padding: 10px !important;
 }
