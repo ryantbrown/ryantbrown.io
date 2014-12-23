@@ -6629,7 +6629,7 @@ button.close {
 }
 body {
   font-family: Roboto, 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  color: #373739;
+  color: #34373b;
 }
 pre {
   margin-bottom: 40px;
@@ -6668,13 +6668,12 @@ a.symbol:hover {
   color: #bbb;
 }
 header.header {
-  background-color: #373739;
+  background-color: #34373b;
   background-image: url(../img/bg/wood.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
   padding-top: 45px;
-  background-position-y: -350px;
 }
 header.header.post {
   background-image: none;
@@ -6715,6 +6714,8 @@ header.header.post {
 @media only screen and (max-width: 479px) {
   .logo {
     width: 35px;
+    margin-top: 5px;
+    margin-left: 10px;
   }
 }
 .logo a img {
@@ -6729,7 +6730,8 @@ nav {
 }
 @media only screen and (max-width: 479px) {
   nav ul {
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
   }
 }
 nav ul li {
@@ -6769,8 +6771,8 @@ nav ul li a.active {
   color: #fff;
 }
 nav ul li a.symbol {
-  font-size: 2em;
-  margin-top: -18px;
+  font-size: 2.5em;
+  margin-top: -23px;
   margin-right: -23px;
   transition: opacity 0.2s ease-out;
 }
@@ -6784,14 +6786,19 @@ nav ul li a.symbol:active {
 }
 @media only screen and (max-width: 479px) {
   nav ul li a.symbol {
-    font-size: 1.5em;
-    margin-top: -11px;
+    font-size: 2em;
+    margin-top: -18px;
     margin-right: -20px;
   }
 }
 header.header .title {
   text-align: center;
   margin-top: 18.5%;
+}
+@media only screen and (max-width: 479px) {
+  header.header .title {
+    margin-top: 90px;
+  }
 }
 header.header .title h2 {
   font-size: 2em;
@@ -6803,12 +6810,24 @@ header.header .title h2 {
 header.header .title h2 span {
   color: #fff;
 }
+@media only screen and (max-width: 479px) {
+  header.header .title h2 {
+    font-size: 1.4em;
+    padding: 0 10px;
+    line-height: 1.5em;
+  }
+}
 header.header .title p {
   color: #959595;
   font-size: 1.1em;
   font-weight: 100;
   margin-top: 5px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+@media only screen and (max-width: 479px) {
+  header.header .title p {
+    display: none;
+  }
 }
 footer {
   padding: 17px 10px 10px 10px;
@@ -6835,6 +6854,11 @@ footer p.copyright {
 .content .posts {
   margin-bottom: 40px;
 }
+@media only screen and (max-width: 479px) {
+  .content .posts {
+    margin-bottom: 15px;
+  }
+}
 .content .posts .article {
   text-decoration: none;
   height: 260px;
@@ -6853,6 +6877,13 @@ footer p.copyright {
 }
 .content .posts .article.col-md-4.last {
   margin-right: 0;
+}
+@media only screen and (max-width: 479px) {
+  .content .posts .article.col-md-4 {
+    display: block;
+    float: none;
+    margin-bottom: 15px;
+  }
 }
 .content .posts .article img {
   position: absolute;
@@ -6898,7 +6929,7 @@ footer p.copyright {
   font-weight: 100;
   transition: color 0.2s ease-out;
 }
-.content .posts .article .comments {
+.content .posts .article .meta {
   margin-bottom: 20px;
   color: #90a7b7;
   font-weight: 100;
@@ -6906,14 +6937,22 @@ footer p.copyright {
   font-size: 12px;
   display: block;
   float: left;
+  margin-right: 10px;
 }
-.content .posts .article .comments i {
-  color: #e64c65;
+.content .posts .article .meta i {
+  color: #fc4e59;
   display: block;
   float: left;
   padding-top: 2px;
   margin-right: 8px;
   font-size: 13px;
+}
+.content .posts .article .meta.right {
+  float: right;
+  margin-right: 0;
+}
+.content .posts .article .meta.right i {
+  color: #9ea6a8;
 }
 .content .posts .article:hover h2 {
   color: #fff;
@@ -6971,12 +7010,22 @@ footer p.copyright {
   height: 100px;
   padding: 14px;
 }
+@media only screen and (max-width: 479px) {
+  .title.bar {
+    margin-bottom: 15px;
+  }
+}
 .title.bar h1 {
   font-size: 18px;
   color: #2a3133;
   letter-spacing: 0px;
   font-weight: 100;
   margin-top: 16px;
+}
+@media only screen and (max-width: 479px) {
+  .title.bar h1 {
+    display: none;
+  }
 }
 .categories {
   margin-top: 12px;
@@ -7329,9 +7378,34 @@ h1.listing-title.workflow span {
   font-size: 12px;
 }
 .post-content .post-top .author {
-  font-size: 14px;
+  margin-top: -4px;
+}
+.post-content .post-top .author .avatar {
+  background-color: #373739;
+  padding: 2px;
+  overflow: hidden;
+  width: 29px;
+  height: 29px;
+  display: block;
+  float: left;
+  border-radius: 50%;
+}
+.post-content .post-top .author .avatar img {
+  width: 25px;
+  height: 25px;
+}
+.post-content .post-top .author .written {
+  font-size: 13px;
   font-weight: 100;
-  color: #6c7477;
+  color: #9ea6a8;
+  display: block;
+  float: left;
+  margin-left: 10px;
+  padding-top: 4px;
+}
+.post-content .post-top .author .written strong {
+  font-weight: 100;
+  color: #5e6669;
 }
 .post-content .post-body {
   padding-top: 40px;
@@ -7388,15 +7462,17 @@ h1.listing-title.workflow span {
   width: 100%;
 }
 .post-content .post-footer .share {
-  margin-top: -10px;
+  margin-top: -30px;
   position: relative;
+  width: 400px;
 }
 .post-content .post-footer .share .symbol {
   color: #bbc5c7;
-  font-size: 30px;
-  transition: color, opacity 0.2s ease-out;
+  font-size: 3em;
+  transition: text-shadow, background-color 0.2s ease-out;
   margin-right: 6px;
-  opacity: 0.4;
+  border-bottom-color: white;
+  border: 1px solid #f2f2f2;
 }
 .post-content .post-footer .share .symbol:before {
   margin-right: 0;
@@ -7404,28 +7480,56 @@ h1.listing-title.workflow span {
 .post-content .post-footer .share .symbol:hover {
   text-decoration: none;
   color: #a7b4b7;
-  opacity: 1;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  background-color: #f2f2f2;
+}
+.post-content .post-footer .share .symbol:active {
+  text-decoration: none;
+}
+.post-content .post-footer .share .symbol.twitter {
+  color: #11aae1;
 }
 .post-content .post-footer .share .symbol.twitter:hover {
   color: #11aae1;
 }
+.post-content .post-footer .share .symbol.facebook {
+  color: #2e3390;
+}
 .post-content .post-footer .share .symbol.facebook:hover {
   color: #2e3390;
 }
+.post-content .post-footer .share .symbol.reddit {
+  color: #FF4006;
+}
 .post-content .post-footer .share .symbol.reddit:hover {
-  color: #ff3a00;
+  color: #FF4006;
+}
+.post-content .post-footer .share .symbol.google {
+  color: #d8352c;
 }
 .post-content .post-footer .share .symbol.google:hover {
   color: #d8352c;
 }
+.post-content .post-footer .share .symbol.pinterest {
+  color: #d00b25;
+}
 .post-content .post-footer .share .symbol.pinterest:hover {
   color: #d00b25;
 }
+.post-content .post-footer .share .symbol.tumblr {
+  color: #2D4768;
+}
 .post-content .post-footer .share .symbol.tumblr:hover {
-  color: #44546b;
+  color: #2D4768;
+}
+.post-content .post-footer .share .symbol.linkedin {
+  color: #00659a;
 }
 .post-content .post-footer .share .symbol.linkedin:hover {
   color: #00659a;
+}
+.post-content .post-footer .share .symbol.add {
+  color: #373739;
 }
 .post-content .post-footer .share .symbol.add:hover {
   color: #373739;

@@ -6,9 +6,9 @@
 <nav>
     <ul>
         <li><a href="/?s=">Blog</a></li>
-        <li><a href="http://twitter.com/r_t_brown" class="symbol" target="_blank">&#xe286;</a></li>
-        <li><a href="http://github.com/ryantbrown" class="symbol" target="_blank">&#xe237;</a></li>
-        <li><a href="https://dribbble.com/ryantbrown" class="symbol" target="_blank">&#xe221;</a></li>
-        <li><a href="mailto:me@ryantbrown.io" class="symbol">&#xe224;</a></li>
+        <li><a href="http://twitter.com/r_t_brown" class="symbol" target="_blank">&#xe086;</a></li>
+        <li><a href="http://github.com/ryantbrown" class="symbol" target="_blank">&#xe037;</a></li>
+        <li><a href="https://dribbble.com/ryantbrown" class="symbol" target="_blank">&#xe021;</a></li>
+        <li><a href="mailto:me@ryantbrown.io" class="symbol">&#xe024;</a></li>
     </ul>
 </nav>

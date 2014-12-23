@@ -7,7 +7,13 @@
 @desktop:   ~"only screen and (min-width: 768px)";
 @tablet:    ~"only screen and (max-width: 767px)";
 @phone:    ~"only screen and (max-width: 479px)";
-@dark: #373739;
+@dark: #34373b;
+@red: #fc4e59;
+@green: #22bb8e;
+@blue: #0cbfd4;
+@grey: #9ea6a8;
+
+
 
 
 .transload {
@@ -67,7 +73,6 @@ header.header {
   background-repeat: no-repeat;
   height: 500px;
   padding-top: 45px;
-  background-position-y: -350px;
 
 
   &.post {
@@ -96,28 +101,17 @@ header.header {
   @media @phone {
     padding: 13px;
   }
-  &.content {
-    //opacity: 1;
-    //.transload;
-//    &.on {
-//      opacity: 1;
-//    }
-  }
 }
 
 .logo {
   float: left;
   width: 65px;
-  //opacity: 0;
   margin-top: -14px;
-  //transform: translateX(-100px);
- // .transload;
-//  &.on {
-//    opacity: 1;
-//    transform: translateX(0px);
-//  }
+
   @media @phone {
     width: 35px;
+    margin-top: 5px;
+    margin-left: 10px;
   }
   a {
     img {
@@ -134,16 +128,10 @@ header.header {
 
 nav {
   float: right;
-//  opacity: 0;
-//  transform: translateX(100px);
-  //.transload;
-//  &.on {
-//    opacity: 1;
-//    transform: translateX(0px);
-//  }
   ul {
     @media @phone {
-      margin-top: 5px;
+      margin-top: 10px;
+      margin-right: 10px;
     }
     li {
       display: block;
@@ -178,8 +166,8 @@ nav {
           color: #fff;
         }
         &.symbol {
-          font-size: 2em;
-          margin-top: -18px;
+          font-size: 2.5em;
+          margin-top: -23px;
           margin-right: -23px;
           transition: opacity .2s ease-out;
           &:hover {
@@ -191,8 +179,8 @@ nav {
             text-decoration: none;
           }
           @media @phone {
-            font-size: 1.5em;
-            margin-top: -11px;
+            font-size: 2em;
+            margin-top: -18px;
             margin-right: -20px;
           }
         }
@@ -206,14 +194,9 @@ header.header {
   .title {
     text-align: center;
     margin-top: 18.5%;
-    //opacity: 0;
-    //transform: translateY(-100px);
-    //.transload;
-//    &.on {
-//      opacity: 1;
-//      transform: translateY(0px);
-//    }
-
+    @media @phone {
+      margin-top: 90px;
+    }
     h2 {
       font-size: 2em;
       font-weight: bold;
@@ -223,6 +206,11 @@ header.header {
       span {
         color: #fff;
       }
+      @media @phone {
+        font-size: 1.4em;
+        padding: 0 10px;
+        line-height: 1.5em;
+      }
     }
     p {
       color: #959595;
@@ -230,6 +218,9 @@ header.header {
       font-weight: 100;
       margin-top: 5px;
       text-shadow: 1px 1px 1px rgba(0,0,0,.25);
+      @media @phone {
+        display: none;
+      }
     }
   }
 }
@@ -261,6 +252,9 @@ footer {
   }
   .posts {
     margin-bottom: 40px;
+    @media @phone {
+      margin-bottom: 15px;
+    }
     .article {
       text-decoration: none;
       height: 260px;
@@ -277,6 +271,12 @@ footer {
         }
         &.last {
           margin-right: 0;
+        }
+        
+        @media @phone {
+          display: block;
+          float: none;
+          margin-bottom: 15px;
         }
       }
       img {
@@ -332,22 +332,31 @@ footer {
         font-weight: 100;
         transition: color .2s ease-out;
       }
-      .comments {
+      .meta {
         margin-bottom: 20px;
-        i {
-          color: #e64c65;
-          display: block;
-          float: left;
-          padding-top: 2px;
-          margin-right: 8px;
-          font-size: 13px;
-        }
         color: #90a7b7;
         font-weight: 100;
         text-transform: uppercase;
         font-size: 12px;
         display: block;
         float: left;
+        margin-right: 10px;
+
+        i {
+          color: @red;
+          display: block;
+          float: left;
+          padding-top: 2px;
+          margin-right: 8px;
+          font-size: 13px;
+        }
+        &.right {
+          float: right;
+          margin-right: 0;
+          i {
+            color: @grey;
+          }
+        }
       }
       &:hover {
         h2 {
@@ -415,12 +424,18 @@ footer {
   width: 100%;
   height: 100px;
   padding: 14px;
+  @media @phone {
+    margin-bottom: 15px;
+  }
   h1 {
     font-size: 18px;
     color: #2a3133;
     letter-spacing: 0px;
     font-weight: 100;
     margin-top: 16px;
+    @media @phone {
+      display: none;
+    }
   }
 }
 
@@ -685,9 +700,34 @@ h1.listing-title {
       }
     }
     .author {
-      font-size: 14px;
-      font-weight: 100;
-      color: #6c7477;
+      margin-top: -4px;
+      .avatar {
+        background-color: #373739;
+        padding: 2px;
+        overflow: hidden;
+        width: 29px;
+        height: 29px;
+        display: block;
+        float: left;
+        border-radius: 50%;
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+      .written {
+        font-size: 13px;
+        font-weight: 100;
+        color: @grey;
+        display: block;
+        float: left;
+        margin-left: 10px;
+        padding-top: 4px;
+        strong {
+          font-weight: 100;
+          color: darken(@grey, 25%);
+        }
+      }
     }
   }
   .post-body {
@@ -746,28 +786,34 @@ h1.listing-title {
     float: left;
     width: 100%;
     .share {
-      margin-top: -10px;
+      margin-top: -30px;
       position: relative;
+      width: 400px;
       .symbol {
         color: #bbc5c7;
-        font-size: 30px;
-        transition: color, opacity .2s ease-out;
+        font-size: 3em;
+        transition: text-shadow, background-color .2s ease-out;
         margin-right: 6px;
-        opacity: 0.4;
+        border-bottom-color: white;
+        border: 1px solid #f2f2f2;
         &:before { margin-right: 0; }
         &:hover {
           text-decoration: none;
           color: darken(#bbc5c7, 7%);
-          opacity: 1;
+          text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+          background-color: #f2f2f2;
         }
-        &.twitter { &:hover { color: #11aae1; } }
-        &.facebook { &:hover { color: #2e3390; } }
-        &.reddit { &:hover { color: #ff3a00; } }
-        &.google { &:hover { color: #d8352c; } }
-        &.pinterest { &:hover { color: #d00b25; } }
-        &.tumblr { &:hover { color: #44546b; } }
-        &.linkedin { &:hover { color: #00659a; }}
-        &.add { &:hover { color: #373739; } }
+        &:active {
+          text-decoration: none;
+        }
+        &.twitter { color: #11aae1; &:hover { color: #11aae1; } }
+        &.facebook { color: #2e3390; &:hover { color: #2e3390; } }
+        &.reddit { color: #FF4006; &:hover { color: #FF4006; } }
+        &.google { color: #d8352c; &:hover { color: #d8352c; } }
+        &.pinterest { color: #d00b25; &:hover { color: #d00b25; } }
+        &.tumblr { color: #2D4768; &:hover { color: #2D4768; } }
+        &.linkedin { color: #00659a; &:hover { color: #00659a; }}
+        &.add { color: #373739; &:hover { color: #373739; } }
       }
     }
   }

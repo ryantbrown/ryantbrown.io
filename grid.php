@@ -9,14 +9,16 @@
             <img src="<?php echo $thumb[0]; ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" />
         <?php } ?>
         <div class="overlay">
-            <div class="comments">
-                <i class="glyphicon glyphicon-comment"></i>
-                <?php comments_number('0 comments', '1 comment', '% comments'); ?>
+            <div class="meta">
+                <i class="glyphicon glyphicon-time"></i>
+                <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?>
+            </div>
+            <div class="meta right">
+                <i class="glyphicon glyphicon-eye-open"></i>
+                <?php echo do_shortcode('[post_view]'); ?>
+
             </div>
             <h2><?php the_title(); ?></h2>
-            <span class="date">
-                <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?>
-            </span>
         </div>
     </a>
     <?php $counter++; endwhile;
