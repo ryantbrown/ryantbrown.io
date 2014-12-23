@@ -5,8 +5,8 @@
            class="col-md-4 article nobg post-<?php the_ID(); ?><?php echo $pos_class; ?>">
         <?php } else { ?>
             <?php $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'thumbnail'); ?>
-            class="col-md-4 article post-<?php the_ID() ?><?php echo $pos_class; ?>"
-            style="background-image: url(<?php echo $thumb[0]; ?>)">
+            class="col-md-4 article post-<?php the_ID() ?><?php echo $pos_class; ?>">
+            <img src="<?php echo $thumb[0]; ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" />
         <?php } ?>
         <div class="overlay">
             <div class="comments">
