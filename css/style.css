@@ -6877,9 +6877,6 @@ footer p.copyright {
 .content .posts .article:hover .overlay {
   background-color: rgba(0, 0, 0, 0.8);
 }
-.content .posts .article:hover img {
-  filter: blur(0px);
-}
 .content .posts .article.nobg .overlay {
   background-color: transparent;
 }

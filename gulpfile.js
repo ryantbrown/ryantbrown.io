@@ -3,7 +3,6 @@ var less = require('gulp-less');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var minify = require('gulp-minify-css');
-var sftp = require('gulp-sftp');
 var prefix = require('gulp-autoprefixer');
 
 var scripts = [
@@ -37,9 +36,3 @@ gulp.task('default', function(){
     gulp.start('css');
     gulp.start('script');
 });
-
-
-
-
-
-
