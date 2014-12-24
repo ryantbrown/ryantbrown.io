@@ -7842,18 +7842,21 @@ h1.listing-title.workflow span {
   }
 }
 .post-content .post-footer .share {
-  margin-top: -30px;
+  margin-top: -15px;
   position: relative;
   width: 400px;
 }
 @media only screen and (max-width: 480px) {
   .post-content .post-footer .share {
     width: 220px;
+    margin-top: -27px;
   }
 }
 .post-content .post-footer .share .symbol {
   color: #bbc5c7;
-  font-size: 3em;
+  font-size: 2em;
+  border-radius: 50%;
+  padding: 0 4px;
   transition: text-shadow, background-color 0.2s ease-out;
   margin-right: 6px;
   border-bottom-color: white;
@@ -7921,7 +7924,9 @@ h1.listing-title.workflow span {
 }
 @media only screen and (max-width: 480px) {
   .post-content .post-footer .share .symbol {
-    font-size: 1.6em;
+    font-size: 1.5em;
+    padding: 0 3px;
+    margin-right: 1px;
   }
 }
 .post-content .post-text {
