@@ -4,14 +4,17 @@
 @import 'bootstrap';
 @import 'syntax';
 
-@desktop:   ~"only screen and (min-width: 769px)";
-@tablet:    ~"only screen and (max-width: 768px)";
+@desktop:   ~"only screen and (min-width: 768px)";
+@tablet:    ~"only screen and (max-width: 767px)";
 @phone:    ~"only screen and (max-width: 480px)";
 @dark: #34373b;
 @red: #fc4e59;
 @green: #22bb8e;
 @blue: #0cbfd4;
 @grey: #9ea6a8;
+
+
+
 
 .transload {
   transition: all .65s cubic-bezier(0.00, 0.370, 0.115, 1.20);
@@ -76,10 +79,10 @@ header.header {
     background-image: none;
     height: 100px;
     padding-top: 29px;
-      height: 80px;
-        width: 40px;
     @media @phone {
+      height: 80px;
       .logo {
+        width: 40px;
         margin-top: -17px;
       }
       nav {
@@ -92,10 +95,10 @@ header.header {
     height: 350px;
   }
 
+  @media @phone {
     height: 250px;
+    padding-top: 0;
   }
-@media @phone {
-  padding-top: 0;
 
 }
 .container {
@@ -105,9 +108,9 @@ header.header {
   @media @tablet {
     max-width: 100%;
   }
+  @media @phone {
     padding: 13px;
-}
-@media @phone {
+  }
 }
 
 .logo {
@@ -115,10 +118,10 @@ header.header {
   width: 65px;
   margin-top: -14px;
 
-    width: 35px;
-    margin-left: 10px;
   @media @phone {
+    width: 35px;
     margin-top: 5px;
+    margin-left: 10px;
   }
   a {
     img {
@@ -136,18 +139,18 @@ header.header {
 nav {
   float: right;
   ul {
+    @media @phone {
       margin-top: 10px;
+      margin-right: 10px;
     }
-  @media @phone {
-    margin-right: 10px;
     li {
       display: block;
       float: left;
       margin-right: 25px;
+      @media @phone {
         margin-right: 18px;
+      }
       a {
-        @media @phone {
-        }
         display: block;
         color: #fff;
         opacity: 0.75;
@@ -156,10 +159,10 @@ nav {
         text-transform: uppercase;
         font-weight: 100;
 
-          font-size: 14px;
-            margin-right: -10px;
         @media @phone {
+          font-size: 14px;
           &:first-child {
+            margin-right: -10px;
           }
         }
 
@@ -185,10 +188,10 @@ nav {
             color: #fff;
             text-decoration: none;
           }
-            font-size: 2em;
-            margin-right: -20px;
           @media @phone {
+            font-size: 2em;
             margin-top: -18px;
+            margin-right: -20px;
           }
         }
       }
@@ -201,10 +204,10 @@ header.header {
   .title {
     text-align: center;
     margin-top: 18.5%;
+    @media @phone {
       margin-top: 90px;
+    }
     h2 {
-      @media @phone {
-      }
       font-size: 2em;
       font-weight: bold;
       color: #a5a5a5;
@@ -213,10 +216,10 @@ header.header {
       span {
         color: #fff;
       }
-        font-size: 1.4em;
-        line-height: 1.5em;
       @media @phone {
+        font-size: 1.4em;
         padding: 0 35px;
+        line-height: 1.5em;
       }
     }
     p {
@@ -225,9 +228,9 @@ header.header {
       font-weight: 100;
       margin-top: 5px;
       text-shadow: 1px 1px 1px rgba(0,0,0,.25);
+      @media @phone {
         display: none;
-    }
-    @media @phone {
+      }
     }
   }
 }
@@ -259,10 +262,10 @@ footer {
   }
   .posts {
     margin-bottom: 40px;
+    @media @phone {
       margin-bottom: 15px;
+    }
     .article {
-      @media @phone {
-      }
       text-decoration: none;
       height: 260px;
       background-repeat: no-repeat;
@@ -280,10 +283,10 @@ footer {
           margin-right: 0;
         }
         
-          display: block;
-          margin-bottom: 15px;
         @media @phone {
+          display: block;
           float: none;
+          margin-bottom: 15px;
         }
       }
       img {
@@ -293,9 +296,9 @@ footer {
         z-index: 2;
         filter: blur(5px);
         transition: all .2s ease-out;
+        @media @phone {
           width: 100%;
-      }
-      @media @phone {
+        }
       }
       .overlay {
         width: 100%;
@@ -433,10 +436,10 @@ footer {
   width: 100%;
   height: 100px;
   padding: 14px;
+  @media @phone {
     margin-bottom: 15px;
+  }
   h1 {
-    @media @phone {
-    }
     font-size: 18px;
     color: #2a3133;
     letter-spacing: 0px;
@@ -452,9 +455,9 @@ footer {
 
 .post-footer .categories {
   margin-top: 0;
+  @media @phone {
     margin-top: -21px;
-}
-@media @phone {
+  }
 }
 
 .categories .label {
@@ -463,9 +466,9 @@ footer {
   border-radius: 50%;
   height: 13px;
   margin-right: 7px;
+  @media @phone {
     padding: 0 4px;
-}
-@media @phone {
+  }
 }
 .categories .label.text {
   font-size: 75%;
@@ -475,9 +478,9 @@ footer {
   margin-right: 25px;
   float: left;
   margin-top: 6px;
+  @media @phone {
     display: none;
-}
-@media @phone {
+  }
 }
 .tags {
   float: right;
@@ -614,20 +617,20 @@ h1.listing-title {
 .post-content {
   max-width: 1000px;
   margin: 0 auto;
+  @media @phone {
     max-width: 100%;
+    width: 100%;
   }
-@media @phone {
-  width: 100%;
   .col-left {
     float: left;
     border-right: 1px solid #eee;
     width: 750px;
     min-height: 800px;
 
-      float: none;
-        padding: 20px;
     @media @phone {
+      float: none;
       &.list-col {
+        padding: 20px;
       }
     }
 
@@ -645,14 +648,14 @@ h1.listing-title {
         display: inline-block;
         padding: 0 4px;
       }
+      @media @phone {
         margin-top: 20px;
+      }
     }
     @media @phone {
-    }
-    width: 100%;
-      border: 0;
-    @media @phone {
+      width: 100%;
       float: none;
+      border: 0;
     }
   }
 
@@ -660,16 +663,16 @@ h1.listing-title {
 
     padding-right: 50px;
 
+    @media @phone {
       padding: 20px;
+    }
     &.listing {
-      @media @phone {
-      }
       clear: both;
       float: left;
+      @media @phone {
         padding: 0;
+        float: none;
       }
-    @media @phone {
-      float: none;
     }
 
   }
@@ -679,10 +682,10 @@ h1.listing-title {
     height: 100%;
     padding: 50px 0 50px 50px;
 
-      width: 100%;
-      position: fixed;
     @media @phone {
+      width: 100%;
       float: none;
+      position: fixed;
       padding: 50px;
       z-index: 5;
       background-color: #fff;
@@ -739,19 +742,19 @@ h1.listing-title {
   }
   .post-top {
     margin-top: 50px;
+    @media @phone {
       margin-top: 20px;
+    }
     .details {
-      @media @phone {
-      }
       color: #bbc5c7;
       font-size: 14px;
       text-transform: uppercase;
       font-weight: 100;
       &.pull-right {
+        @media @phone {
           float: none !important;
+          font-size: 12px;
         }
-      @media @phone {
-        font-size: 12px;
       }
       .views {
         float: left;
@@ -759,9 +762,9 @@ h1.listing-title {
         i { display: block; float: left; margin-right: 8px; padding-top: 1px }
         span {
           display: block; float: left; font-size: 12px;
+          @media @phone {
             font-size: 11px;
-        }
-        @media @phone {
+          }
         }
       }
       .time { float: left;
@@ -771,10 +774,10 @@ h1.listing-title {
     }
     .author {
       margin-top: -4px;
+      @media @phone {
         display: none;
+      }
       .avatar {
-        @media @phone {
-        }
         background-color: #373739;
         padding: 2px;
         overflow: hidden;
@@ -806,10 +809,10 @@ h1.listing-title {
   .post-body {
     padding-top: 40px;
     clear: both;
-      padding-top: 20px;
-
     @media @phone {
+      padding-top: 20px;
     }
+
     &.listing {
       float: left;
       width: 100%;
@@ -841,11 +844,11 @@ h1.listing-title {
         margin-top: 25px;
         margin-bottom: 65px;
       }
+      @media @phone {
         padding-bottom: 20px;
+        opacity: 1;
         .item-image {
-          @media @phone {
-            opacity: 1;
-            float: none;
+          float: none;
           width: 100%;
         }
         .item-info {
@@ -871,10 +874,10 @@ h1.listing-title {
       color: #323637;
       font-weight: 600;
       line-height: 40px;
-        line-height: 24px;
-        margin-bottom: 20px;
       @media @phone {
+        line-height: 24px;
         font-size: 18px;
+        margin-bottom: 20px;
         font-weight: 400;
         letter-spacing: -1px;
       }
@@ -890,17 +893,17 @@ h1.listing-title {
     border-bottom: 1px solid #eee;
     float: left;
     width: 100%;
+    @media @phone {
       padding-bottom: 20px;
+    }
     .share {
-      @media @phone {
-      }
       margin-top: -30px;
       position: relative;
       width: 400px;
+      @media @phone {
         width: 220px;
+      }
       .symbol {
-        @media @phone {
-        }
         color: #bbc5c7;
         font-size: 3em;
         transition: text-shadow, background-color .2s ease-out;
@@ -926,9 +929,9 @@ h1.listing-title {
         &.linkedin { color: #00659a; &:hover { color: #00659a; }}
         &.add { color: #373739; &:hover { color: #373739; } }
 
+        @media @phone {
           font-size: 1.6em;
-      }
-      @media @phone {
+        }
       }
     }
   }
@@ -946,10 +949,10 @@ h1.listing-title {
       max-width: 100%;
       border: 5px solid #eee;
     }
-      padding-top: 20px;
-      line-height: 26px;
     @media @phone {
+      padding-top: 20px;
       font-size: 14px;
+      line-height: 26px;
       p {
         margin-bottom: 22px;
       }
@@ -963,10 +966,10 @@ h1.listing-title {
 
 //.sidebar-toggle {
 //  display: none;
-//    display: block;
-//    width: 50px;
 //  @media @phone {
+//    display: block;
 //    position: fixed;
+//    width: 50px;
 //    top: 0;
 //    right: 0;
 //    padding: 10px;
