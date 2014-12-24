@@ -10,6 +10,7 @@ var scripts = [
     './js/lib/typed.js',
     './js/lib/bootstrap.js',
     './js/lib/swipe.js',
+    './js/lib/syntax.js',
     './js/scripts.js'
 ];
 

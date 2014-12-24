@@ -1,244 +1,313 @@
 /*
-Name: Obsidian
-Description: JetBrains PhpStorm Obsidian
-Version: 1
-Author: Rakcheev Artem
-URL: http://rakcheev.ru/
+
+Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+
 */
-.crayon-theme-obsidian {
-  text-shadow: none !important;
-  color: #fff;
-  background: #283033 !important;
-  border-style: solid !important;
-  border-width: 1px !important;
-  border-color: #283033 !important;
-}
-.crayon-theme-obsidian .crayon-code {
-  background: #2d2d2d !important;
-}
-.crayon-theme-obsidian-inline {
-  background: #283033 !important;
-  border-style: solid !important;
-  border-width: 1px !important;
-  border-color: #283033 !important;
-}
-.crayon-theme-obsidian span {
-  color: #999 !important;
-}
-.crayon-theme-obsidian .crayon-table .crayon-nums {
-  color: #81969a !important;
-  background: #3f4b4e !important;
-  border-right-style: dotted !important;
-  border-right-width: 1px !important;
-  border-right-color: #808080 !important;
-}
-.crayon-theme-obsidian .crayon-code::selection {
-  background: #ddeeff !important;
-  color: #316ba5 !important;
-}
-.crayon-theme-obsidian .crayon-code *::selection {
-  background: #ddeeff !important;
-  color: #316ba5 !important;
-}
-.crayon-theme-obsidian::selection {
-  background: transparent !important;
-}
-.crayon-theme-obsidian .crayon-toolbar::selection {
-  background: transparent !important;
-}
-.crayon-theme-obsidian .crayon-toolbar *::selection {
-  background: transparent !important;
-}
-.crayon-theme-obsidian .crayon-info::selection {
-  background: transparent !important;
-}
-.crayon-theme-obsidian .crayon-info *::selection {
-  background: transparent !important;
-}
-.crayon-theme-obsidian .crayon-nums::selection {
-  background: transparent !important;
-}
-.crayon-theme-obsidian .crayon-nums *::selection {
-  background: transparent !important;
-}
-.crayon-theme-obsidian .crayon-striped-line {
-  background: #283033 !important;
-  border-width: 1px !important;
-  border-color: #171717 !important;
-}
-.crayon-theme-obsidian .crayon-striped-num {
-  background: #3f4b4e !important;
-  color: #81969a !important;
-  border-width: 1px !important;
-  border-color: #CCC !important;
-}
-.crayon-theme-obsidian .crayon-marked-line {
-  background: #2f393c !important;
-  border-width: 1px !important;
-  border-color: #2f393c !important;
-}
-.crayon-theme-obsidian .crayon-marked-num {
-  color: #81969a !important;
-  background: #2f393c !important;
-  border-width: 1px !important;
-  border-color: #2f393c !important;
-}
-.crayon-theme-obsidian .crayon-marked-line.crayon-striped-line {
-  background: #2f393c !important;
-}
-.crayon-theme-obsidian .crayon-marked-num.crayon-striped-num {
-  background: #2f393c !important;
-  color: #81969a !important;
-}
-.crayon-theme-obsidian .crayon-marked-line.crayon-top {
-  border-top-style: solid !important;
-}
-.crayon-theme-obsidian .crayon-marked-num.crayon-top {
-  border-top-style: solid !important;
-}
-.crayon-theme-obsidian .crayon-marked-line.crayon-bottom {
-  border-bottom-style: solid !important;
-}
-.crayon-theme-obsidian .crayon-marked-num.crayon-bottom {
-  border-bottom-style: solid !important;
-}
-.crayon-theme-obsidian .crayon-info {
-  background: #faf9d7 !important;
-  color: #7e7d34 !important;
-  border-bottom-style: solid !important;
-  border-bottom-width: 1px !important;
-  border-bottom-color: #b1af5e !important;
-}
-.crayon-theme-obsidian .crayon-toolbar {
-  background: #3c3f41 !important;
-  border-bottom-style: solid !important;
-  border-bottom-width: 1px !important;
-  border-bottom-color: #595959 !important;
-}
-.crayon-theme-obsidian .crayon-toolbar > div {
-  float: left !important;
-}
-.crayon-theme-obsidian .crayon-toolbar .crayon-tools {
-  float: right !important;
-}
-.crayon-theme-obsidian .crayon-title {
-  color: #bbbbbb !important;
-}
-.crayon-theme-obsidian .crayon-language {
-  color: #bbbbbb !important;
-}
-.crayon-theme-obsidian .crayon-toolbar .crayon-mixed-highlight {
-  background-position: -24px center;
-}
-.crayon-theme-obsidian .crayon-button {
-  background-color: transparent !important;
-}
-.crayon-theme-obsidian .crayon-button:hover {
-  background-color: #3c3f41 !important;
-  color: #666;
-}
-.crayon-theme-obsidian .crayon-button.crayon-pressed:hover {
-  background-color: #505050 !important;
-  color: #666;
-}
-.crayon-theme-obsidian .crayon-button.crayon-pressed {
-  background-color: #505050 !important;
-  color: #ccc;
-}
-.crayon-theme-obsidian .crayon-button.crayon-pressed:active {
-  background-color: #505050 !important;
-  color: #ccc;
-}
-.crayon-theme-obsidian .crayon-button:active {
-  background-color: #505050 !important;
-  color: #ccc;
-}
-.crayon-theme-obsidian .crayon-pre .crayon-c {
-  color: #66747b !important;
-}
-.crayon-theme-obsidian .crayon-pre .crayon-p {
-  color: #a19ba2 !important;
-}
-.crayon-theme-obsidian .crayon-pre .crayon-s {
-  color: #ec7600 !important;
-}
-.crayon-theme-obsidian .crayon-pre .crayon-k {
-  color: #93c763 !important;
-}
-.crayon-theme-obsidian .crayon-pre .crayon-st {
-  color: #93c763 !important;
-}
-.crayon-theme-obsidian .crayon-pre .crayon-r {
-  color: #93c763 !important;
-}
-.crayon-theme-obsidian .crayon-pre .crayon-t {
-  color: #93c763 !important;
-}
-.crayon-theme-obsidian .crayon-pre .crayon-m {
-  color: #93c763 !important;
-}
-.crayon-theme-obsidian .crayon-pre .crayon-ta {
-  color: #aaaaaa !important;
-}
-.crayon-theme-obsidian .crayon-pre .crayon-i {
-  color: #d955c1 !important;
-}
-.crayon-theme-obsidian .crayon-pre .crayon-v {
-  color: #ffffff !important;
-}
-.crayon-theme-obsidian .crayon-pre .crayon-e {
-  color: #678cb1 !important;
-}
-.crayon-theme-obsidian .crayon-pre .crayon-cn {
-  color: #ffcd22 !important;
-}
-.crayon-theme-obsidian .crayon-pre .crayon-o {
-  color: #ffffff !important;
-}
-.crayon-theme-obsidian .crayon-pre .crayon-h {
-  color: #ac99ab !important;
-}
-.crayon-theme-obsidian .crayon-pre .crayon-sy {
-  color: #ffffff !important;
-}
-.crayon-theme-obsidian .crayon-pre .crayon-n {
-  color: #726e73 !important;
-  font-style: italic !important;
-}
-.crayon-theme-obsidian .crayon-pre .crayon-f {
-  color: #d8bfd8 !important;
-}
-.crayon-theme-obsidian .crayon-pre {
-  color: #ffffff !important;
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #f0f0f0;
+  -webkit-text-size-adjust: none;
 }
 
-@font-face {
-  font-family: 'MonacoRegular';
-  src: url('/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.eot');
-  src: url('/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.eot?#iefix') format('embedded-opentype'),
-  url('/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.woff') format('woff'),
-  url('/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.ttf') format('truetype'),
-  url('/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.svg#MonacoRegular') format('svg');
+.hljs,
+.hljs-subst,
+.hljs-tag .hljs-title,
+.nginx .hljs-title {
+  color: black;
+}
+
+.hljs-string,
+.hljs-title,
+.hljs-constant,
+.hljs-parent,
+.hljs-tag .hljs-value,
+.hljs-rules .hljs-value,
+.hljs-preprocessor,
+.hljs-pragma,
+.haml .hljs-symbol,
+.ruby .hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.hljs-template_tag,
+.django .hljs-variable,
+.smalltalk .hljs-class,
+.hljs-addition,
+.hljs-flow,
+.hljs-stream,
+.bash .hljs-variable,
+.apache .hljs-tag,
+.apache .hljs-cbracket,
+.tex .hljs-command,
+.tex .hljs-special,
+.erlang_repl .hljs-function_or_atom,
+.asciidoc .hljs-header,
+.markdown .hljs-header,
+.coffeescript .hljs-attribute {
+  color: #800;
+}
+
+.smartquote,
+.hljs-comment,
+.hljs-annotation,
+.diff .hljs-header,
+.hljs-chunk,
+.asciidoc .hljs-blockquote,
+.markdown .hljs-blockquote {
+  color: #888;
+}
+
+.hljs-number,
+.hljs-date,
+.hljs-regexp,
+.hljs-literal,
+.hljs-hexcolor,
+.smalltalk .hljs-symbol,
+.smalltalk .hljs-char,
+.go .hljs-constant,
+.hljs-change,
+.lasso .hljs-variable,
+.makefile .hljs-variable,
+.asciidoc .hljs-bullet,
+.markdown .hljs-bullet,
+.asciidoc .hljs-link_url,
+.markdown .hljs-link_url {
+  color: #080;
+}
+
+.hljs-label,
+.hljs-javadoc,
+.ruby .hljs-string,
+.hljs-decorator,
+.hljs-filter .hljs-argument,
+.hljs-localvars,
+.hljs-array,
+.hljs-attr_selector,
+.hljs-important,
+.hljs-pseudo,
+.hljs-pi,
+.haml .hljs-bullet,
+.hljs-doctype,
+.hljs-deletion,
+.hljs-envvar,
+.hljs-shebang,
+.apache .hljs-sqbracket,
+.nginx .hljs-built_in,
+.tex .hljs-formula,
+.erlang_repl .hljs-reserved,
+.hljs-prompt,
+.asciidoc .hljs-link_label,
+.markdown .hljs-link_label,
+.vhdl .hljs-attribute,
+.clojure .hljs-attribute,
+.asciidoc .hljs-attribute,
+.lasso .hljs-attribute,
+.coffeescript .hljs-property,
+.hljs-phony {
+  color: #88f;
+}
+
+.hljs-keyword,
+.hljs-id,
+.hljs-title,
+.hljs-built_in,
+.css .hljs-tag,
+.hljs-javadoctag,
+.hljs-phpdoc,
+.hljs-dartdoc,
+.hljs-yardoctag,
+.smalltalk .hljs-class,
+.hljs-winutils,
+.bash .hljs-variable,
+.apache .hljs-tag,
+.hljs-type,
+.hljs-typename,
+.tex .hljs-command,
+.asciidoc .hljs-strong,
+.markdown .hljs-strong,
+.hljs-request,
+.hljs-status {
+  font-weight: bold;
+}
+
+.asciidoc .hljs-emphasis,
+.markdown .hljs-emphasis {
+  font-style: italic;
+}
+
+.nginx .hljs-built_in {
   font-weight: normal;
-  font-style: normal;
 }
 
-.crayon-font-monaco * {
-  font-family: Monaco, 'MonacoRegular', 'Courier New', monospace !important;
+.coffeescript .javascript,
+.javascript .xml,
+.lasso .markup,
+.tex .hljs-formula,
+.xml .javascript,
+.xml .vbscript,
+.xml .css,
+.xml .hljs-cdata {
+  opacity: 0.5;
 }
 
-.post-text {
-  .crayon-syntax {
-    margin-bottom: 40px !important;
-    .crayon-main {
-      .crayon-table {
-        td {
-          padding: 10px !important;
-        }
-      }
-    }
-    @media @phone {
-      margin-bottom: 20px;
-    }
-  }
+/*
+
+Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #23241f;
+  -webkit-text-size-adjust: none;
+}
+
+.hljs,
+.hljs-tag,
+.css .hljs-rules,
+.css .hljs-value,
+.aspectj .hljs-function,
+.css .hljs-function
+.hljs-preprocessor,
+.hljs-pragma {
+  color: #f8f8f2;
+}
+
+.hljs-strongemphasis,
+.hljs-strong,
+.hljs-emphasis {
+  color: #a8a8a2;
+}
+
+.hljs-bullet,
+.hljs-blockquote,
+.hljs-horizontal_rule,
+.hljs-number,
+.hljs-regexp,
+.alias .hljs-keyword,
+.hljs-literal,
+.hljs-hexcolor {
+  color: #ae81ff;
+}
+
+.hljs-tag .hljs-value,
+.hljs-code,
+.hljs-title,
+.css .hljs-class,
+.hljs-class .hljs-title:last-child {
+  color: #a6e22e;
+}
+
+.hljs-link_url {
+  font-size: 80%;
+}
+
+.hljs-strong,
+.hljs-strongemphasis {
+  font-weight: bold;
+}
+
+.hljs-emphasis,
+.hljs-strongemphasis,
+.hljs-class .hljs-title:last-child,
+.hljs-typename {
+  font-style: italic;
+}
+
+.hljs-keyword,
+.ruby .hljs-class .hljs-keyword:first-child,
+.ruby .hljs-function .hljs-keyword,
+.hljs-function,
+.hljs-change,
+.hljs-winutils,
+.hljs-flow,
+.nginx .hljs-title,
+.tex .hljs-special,
+.hljs-header,
+.hljs-attribute,
+.hljs-symbol,
+.hljs-symbol .hljs-string,
+.hljs-tag .hljs-title,
+.hljs-value,
+.alias .hljs-keyword:first-child,
+.css .hljs-tag,
+.css .unit,
+.css .hljs-important {
+  color: #f92672;
+}
+
+.hljs-function .hljs-keyword,
+.hljs-class .hljs-keyword:first-child,
+.hljs-aspect .hljs-keyword:first-child,
+.hljs-constant,
+.hljs-typename,
+.css .hljs-attribute {
+  color: #66d9ef;
+}
+
+.hljs-variable,
+.hljs-params,
+.hljs-class .hljs-title,
+.hljs-aspect .hljs-title {
+  color: #f8f8f2;
+}
+
+.hljs-string,
+.css .hljs-id,
+.hljs-subst,
+.hljs-type,
+.ruby .hljs-class .hljs-parent,
+.hljs-built_in,
+.django .hljs-template_tag,
+.django .hljs-variable,
+.smalltalk .hljs-class,
+.django .hljs-filter .hljs-argument,
+.smalltalk .hljs-localvars,
+.smalltalk .hljs-array,
+.hljs-attr_selector,
+.hljs-pseudo,
+.hljs-addition,
+.hljs-stream,
+.hljs-envvar,
+.apache .hljs-tag,
+.apache .hljs-cbracket,
+.tex .hljs-command,
+.hljs-prompt,
+.hljs-link_label,
+.hljs-link_url {
+  color: #e6db74;
+}
+
+.hljs-comment,
+.hljs-javadoc,
+.hljs-annotation,
+.hljs-decorator,
+.hljs-pi,
+.hljs-doctype,
+.hljs-deletion,
+.hljs-shebang,
+.apache .hljs-sqbracket,
+.tex .hljs-formula {
+  color: #75715e;
+}
+
+.coffeescript .javascript,
+.javascript .xml,
+.tex .hljs-formula,
+.xml .javascript,
+.xml .vbscript,
+.xml .css,
+.xml .hljs-cdata,
+.xml .php,
+.php .xml {
+  opacity: 0.5;
+}
+
+
+
+code.hljs {
+  padding: 1em;
 }

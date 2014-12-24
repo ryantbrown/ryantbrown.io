@@ -27,12 +27,11 @@ body {
 
 pre {
   margin-bottom: 40px;
-  padding: 20px;
-  background-color: #fbfbfb;
-  border: 1px solid #eee;
-  code {
-    display: block;
-    margin-top: -15px;
+  padding: 0;
+  border-radius: 0;
+  @media @phone {
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 }
 
@@ -694,12 +693,13 @@ h1.listing-title {
       left: 0;
       overflow-y: scroll;
       transform: translateX(100%);
-      transition: transform .1s ease-out;
+      transition: transform .2s cubic-bezier(0.0800, 0.555, 0.00500, 0.985);
       &.on {
         transform: translateX(0);
-        transition: transform .05s ease-out;
+        transition: transform .4s cubic-bezier(0.0800, 0.555, 0.00500, 0.985);
       }
       &.half {
+        transition: transform .8s cubic-bezier(0.0800, 0.555, 0.00500, 0.985);
         transform: translateX(50%);
       }
     }

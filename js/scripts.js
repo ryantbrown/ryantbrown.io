@@ -1,4 +1,6 @@
 (function ($, root, undefined) {
+	// syntax highlight
+	hljs.initHighlightingOnLoad();
 
 	// dual screen pop up window
 	var pop = function(url, title, w, h) {
