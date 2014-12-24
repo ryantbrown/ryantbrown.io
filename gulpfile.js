@@ -9,7 +9,7 @@ var scripts = [
     './js/lib/jquery.js',
     './js/lib/typed.js',
     './js/lib/bootstrap.js',
-    './js/lib/swipe.js',
+    //'./js/lib/swipe.js',
     './js/scripts.js'
 ];
 
