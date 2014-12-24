@@ -6902,6 +6902,28 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 code.hljs {
   padding: 0 1.5em 1.5em 1.5em;
 }
+.apache .hljs-tag,
+.asciidoc .hljs-strong,
+.bash .hljs-variable,
+.css .hljs-tag,
+.hljs-built_in,
+.hljs-dartdoc,
+.hljs-id,
+.hljs-javadoctag,
+.hljs-keyword,
+.hljs-phpdoc,
+.hljs-request,
+.hljs-status,
+.hljs-title,
+.hljs-type,
+.hljs-typename,
+.hljs-winutils,
+.hljs-yardoctag,
+.markdown .hljs-strong,
+.smalltalk .hljs-class,
+.tex .hljs-command {
+  font-weight: normal;
+}
 .transload {
   transition: all 0.65s cubic-bezier(0, 0.37, 0.115, 1.2);
 }
