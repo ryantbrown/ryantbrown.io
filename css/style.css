@@ -7123,6 +7123,7 @@ footer p.copyright {
     display: block;
     float: none;
     margin-bottom: 15px;
+    overflow: hidden;
   }
 }
 .content .posts .article img {
