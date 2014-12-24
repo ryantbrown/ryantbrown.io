@@ -7613,6 +7613,9 @@ h1.listing-title.workflow span {
     transform: translateX(0);
     transition: transform 0.05s ease-out;
   }
+  .post-content .post-sidebar.half {
+    transform: translateX(50%);
+  }
 }
 .post-content .post-sidebar .search-wrap {
   position: relative;

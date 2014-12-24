@@ -70,11 +70,23 @@
 			window.location = $(this).data('url');
 		});
 
+		// show the sidebar to let user know it exists
+		var tease_swipe = setInterval(function(){
+			// only show if its mobile
+			if($('.post-sidebar').css('position') == 'fixed') {
+				$('.post-sidebar').addClass('half');
+				setTimeout(function(){
+					$('.post-sidebar').removeClass('half');
+				}, 500);
+			}
+		}, 10000);
+
 		// swipe menu
 		$(".post-content").swipe({
 			swipeLeft:function(){
 				if( ! $('.post-sidebar').hasClass('on')) {
 					$('.post-sidebar').addClass('on');
+					clearInterval(tease_swipe);
 				}
 			},
 			swipeRight: function(){
@@ -84,6 +96,9 @@
 			},
 			allowPageScroll: "auto"
 		});
+
+
+
 
 	});
 	
