@@ -12,3 +12,5 @@
         <li><a href="mailto:me@ryantbrown.io" class="symbol">&#xe024;</a></li>
     </ul>
 </nav>
+
+<!--<a href="#" class="sidebar-toggle symbol">&#xe002;</a>-->

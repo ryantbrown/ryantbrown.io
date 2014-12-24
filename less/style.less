@@ -79,6 +79,16 @@ header.header {
     background-image: none;
     height: 100px;
     padding-top: 29px;
+    @media @phone {
+      height: 80px;
+      .logo {
+        width: 40px;
+        margin-top: -17px;
+      }
+      nav {
+        margin-top: -21px;
+      }
+    }
   }
 
   @media @tablet {
@@ -286,7 +296,9 @@ footer {
         z-index: 2;
         filter: blur(5px);
         transition: all .2s ease-out;
-
+        @media @phone {
+          width: 100%;
+        }
       }
       .overlay {
         width: 100%;
@@ -433,9 +445,7 @@ footer {
     letter-spacing: 0px;
     font-weight: 100;
     margin-top: 16px;
-    @media @phone {
-      display: none;
-    }
+
   }
 }
 
@@ -445,6 +455,9 @@ footer {
 
 .post-footer .categories {
   margin-top: 0;
+  @media @phone {
+    margin-top: -21px;
+  }
 }
 
 .categories .label {
@@ -453,6 +466,9 @@ footer {
   border-radius: 50%;
   height: 13px;
   margin-right: 7px;
+  @media @phone {
+    padding: 0 4px;
+  }
 }
 .categories .label.text {
   font-size: 75%;
@@ -462,6 +478,9 @@ footer {
   margin-right: 25px;
   float: left;
   margin-top: 6px;
+  @media @phone {
+    display: none;
+  }
 }
 .tags {
   float: right;
@@ -598,12 +617,23 @@ h1.listing-title {
 .post-content {
   max-width: 1000px;
   margin: 0 auto;
-
+  @media @phone {
+    max-width: 100%;
+    width: 100%;
+  }
   .col-left {
     float: left;
     border-right: 1px solid #eee;
     width: 750px;
     min-height: 800px;
+
+    @media @phone {
+      float: none;
+      &.list-col {
+        padding: 20px;
+      }
+    }
+
     h1.listing-title {
       text-transform: uppercase;
       font-size: 14px;
@@ -618,6 +648,14 @@ h1.listing-title {
         display: inline-block;
         padding: 0 4px;
       }
+      @media @phone {
+        margin-top: 20px;
+      }
+    }
+    @media @phone {
+      width: 100%;
+      float: none;
+      border: 0;
     }
   }
 
@@ -625,12 +663,16 @@ h1.listing-title {
 
     padding-right: 50px;
 
-
+    @media @phone {
+      padding: 20px;
+    }
     &.listing {
       clear: both;
       float: left;
-
-
+      @media @phone {
+        padding: 0;
+        float: none;
+      }
     }
 
   }
@@ -639,6 +681,23 @@ h1.listing-title {
     float: right;
     height: 100%;
     padding: 50px 0 50px 50px;
+
+    @media @phone {
+      width: 100%;
+      float: none;
+      position: fixed;
+      padding: 50px;
+      z-index: 5;
+      background-color: #fff;
+      top: 0;
+      left: 0;
+      transform: translateX(100%);
+      transition: transform .1s ease-out;
+      &.on {
+        transform: translateX(0);
+        transition: transform .05s ease-out;
+      }
+    }
 
     .search-wrap {
       position: relative;
@@ -683,16 +742,30 @@ h1.listing-title {
   }
   .post-top {
     margin-top: 50px;
+    @media @phone {
+      margin-top: 20px;
+    }
     .details {
       color: #bbc5c7;
       font-size: 14px;
       text-transform: uppercase;
       font-weight: 100;
+      &.pull-right {
+        @media @phone {
+          float: none !important;
+          font-size: 12px;
+        }
+      }
       .views {
         float: left;
         margin-right: 20px;
         i { display: block; float: left; margin-right: 8px; padding-top: 1px }
-        span { display: block; float: left; font-size: 12px }
+        span {
+          display: block; float: left; font-size: 12px;
+          @media @phone {
+            font-size: 11px;
+          }
+        }
       }
       .time { float: left;
         i { display: block; float: left;  margin-right: 8px;padding-top: 1px  }
@@ -701,6 +774,9 @@ h1.listing-title {
     }
     .author {
       margin-top: -4px;
+      @media @phone {
+        display: none;
+      }
       .avatar {
         background-color: #373739;
         padding: 2px;
@@ -732,8 +808,10 @@ h1.listing-title {
   }
   .post-body {
     padding-top: 40px;
-
     clear: both;
+    @media @phone {
+      padding-top: 20px;
+    }
 
     &.listing {
       float: left;
@@ -766,6 +844,28 @@ h1.listing-title {
         margin-top: 25px;
         margin-bottom: 65px;
       }
+      @media @phone {
+        padding-bottom: 20px;
+        .item-image {
+          float: none;
+          width: 100%;
+        }
+        .item-info {
+          float: none;
+          margin-left: 0;
+          width: 100%;
+          h1 {
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 15px;
+            margin-top: 15px;
+          }
+        }
+        .post-top {
+          margin-bottom: 25px;
+          margin-top: 10px;
+        }
+      }
     }
     h1 {
       margin-top: 0;
@@ -773,6 +873,13 @@ h1.listing-title {
       color: #323637;
       font-weight: 600;
       line-height: 40px;
+      @media @phone {
+        line-height: 24px;
+        font-size: 18px;
+        margin-bottom: 20px;
+        font-weight: 400;
+        letter-spacing: -1px;
+      }
     }
     img {
       max-width: 100%;
@@ -785,10 +892,16 @@ h1.listing-title {
     border-bottom: 1px solid #eee;
     float: left;
     width: 100%;
+    @media @phone {
+      padding-bottom: 20px;
+    }
     .share {
       margin-top: -30px;
       position: relative;
       width: 400px;
+      @media @phone {
+        width: 220px;
+      }
       .symbol {
         color: #bbc5c7;
         font-size: 3em;
@@ -814,6 +927,10 @@ h1.listing-title {
         &.tumblr { color: #2D4768; &:hover { color: #2D4768; } }
         &.linkedin { color: #00659a; &:hover { color: #00659a; }}
         &.add { color: #373739; &:hover { color: #373739; } }
+
+        @media @phone {
+          font-size: 1.6em;
+        }
       }
     }
   }
@@ -825,10 +942,19 @@ h1.listing-title {
     color: #323637;
     p {
       margin-bottom: 45px;
+
     }
     img {
       max-width: 100%;
       border: 5px solid #eee;
+    }
+    @media @phone {
+      padding-top: 20px;
+      font-size: 14px;
+      line-height: 26px;
+      p {
+        margin-bottom: 22px;
+      }
     }
   }
 }
@@ -837,3 +963,16 @@ h1.listing-title {
   margin: 60px 0;
 }
 
+//.sidebar-toggle {
+//  display: none;
+//  @media @phone {
+//    display: block;
+//    position: fixed;
+//    width: 50px;
+//    top: 0;
+//    right: 0;
+//    padding: 10px;
+//    background-color: @dark;
+//    color: #fff;
+//  }
+//}

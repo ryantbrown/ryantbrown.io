@@ -6618,11 +6618,239 @@ button.close {
     display: none !important;
   }
 }
+/*
+Name: Obsidian
+Description: JetBrains PhpStorm Obsidian
+Version: 1
+Author: Rakcheev Artem
+URL: http://rakcheev.ru/
+*/
+.crayon-theme-obsidian {
+  text-shadow: none !important;
+  color: #fff;
+  background: #283033 !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  border-color: #283033 !important;
+}
+.crayon-theme-obsidian .crayon-code {
+  background: #2d2d2d !important;
+}
+.crayon-theme-obsidian-inline {
+  background: #283033 !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  border-color: #283033 !important;
+}
+.crayon-theme-obsidian span {
+  color: #999 !important;
+}
+.crayon-theme-obsidian .crayon-table .crayon-nums {
+  color: #81969a !important;
+  background: #3f4b4e !important;
+  border-right-style: dotted !important;
+  border-right-width: 1px !important;
+  border-right-color: #808080 !important;
+}
+.crayon-theme-obsidian .crayon-code::selection {
+  background: #ddeeff !important;
+  color: #316ba5 !important;
+}
+.crayon-theme-obsidian .crayon-code *::selection {
+  background: #ddeeff !important;
+  color: #316ba5 !important;
+}
+.crayon-theme-obsidian::selection {
+  background: transparent !important;
+}
+.crayon-theme-obsidian .crayon-toolbar::selection {
+  background: transparent !important;
+}
+.crayon-theme-obsidian .crayon-toolbar *::selection {
+  background: transparent !important;
+}
+.crayon-theme-obsidian .crayon-info::selection {
+  background: transparent !important;
+}
+.crayon-theme-obsidian .crayon-info *::selection {
+  background: transparent !important;
+}
+.crayon-theme-obsidian .crayon-nums::selection {
+  background: transparent !important;
+}
+.crayon-theme-obsidian .crayon-nums *::selection {
+  background: transparent !important;
+}
+.crayon-theme-obsidian .crayon-striped-line {
+  background: #283033 !important;
+  border-width: 1px !important;
+  border-color: #171717 !important;
+}
+.crayon-theme-obsidian .crayon-striped-num {
+  background: #3f4b4e !important;
+  color: #81969a !important;
+  border-width: 1px !important;
+  border-color: #CCC !important;
+}
+.crayon-theme-obsidian .crayon-marked-line {
+  background: #2f393c !important;
+  border-width: 1px !important;
+  border-color: #2f393c !important;
+}
+.crayon-theme-obsidian .crayon-marked-num {
+  color: #81969a !important;
+  background: #2f393c !important;
+  border-width: 1px !important;
+  border-color: #2f393c !important;
+}
+.crayon-theme-obsidian .crayon-marked-line.crayon-striped-line {
+  background: #2f393c !important;
+}
+.crayon-theme-obsidian .crayon-marked-num.crayon-striped-num {
+  background: #2f393c !important;
+  color: #81969a !important;
+}
+.crayon-theme-obsidian .crayon-marked-line.crayon-top {
+  border-top-style: solid !important;
+}
+.crayon-theme-obsidian .crayon-marked-num.crayon-top {
+  border-top-style: solid !important;
+}
+.crayon-theme-obsidian .crayon-marked-line.crayon-bottom {
+  border-bottom-style: solid !important;
+}
+.crayon-theme-obsidian .crayon-marked-num.crayon-bottom {
+  border-bottom-style: solid !important;
+}
+.crayon-theme-obsidian .crayon-info {
+  background: #faf9d7 !important;
+  color: #7e7d34 !important;
+  border-bottom-style: solid !important;
+  border-bottom-width: 1px !important;
+  border-bottom-color: #b1af5e !important;
+}
+.crayon-theme-obsidian .crayon-toolbar {
+  background: #3c3f41 !important;
+  border-bottom-style: solid !important;
+  border-bottom-width: 1px !important;
+  border-bottom-color: #595959 !important;
+}
+.crayon-theme-obsidian .crayon-toolbar > div {
+  float: left !important;
+}
+.crayon-theme-obsidian .crayon-toolbar .crayon-tools {
+  float: right !important;
+}
+.crayon-theme-obsidian .crayon-title {
+  color: #bbbbbb !important;
+}
+.crayon-theme-obsidian .crayon-language {
+  color: #bbbbbb !important;
+}
+.crayon-theme-obsidian .crayon-toolbar .crayon-mixed-highlight {
+  background-position: -24px center;
+}
+.crayon-theme-obsidian .crayon-button {
+  background-color: transparent !important;
+}
+.crayon-theme-obsidian .crayon-button:hover {
+  background-color: #3c3f41 !important;
+  color: #666;
+}
+.crayon-theme-obsidian .crayon-button.crayon-pressed:hover {
+  background-color: #505050 !important;
+  color: #666;
+}
+.crayon-theme-obsidian .crayon-button.crayon-pressed {
+  background-color: #505050 !important;
+  color: #ccc;
+}
+.crayon-theme-obsidian .crayon-button.crayon-pressed:active {
+  background-color: #505050 !important;
+  color: #ccc;
+}
+.crayon-theme-obsidian .crayon-button:active {
+  background-color: #505050 !important;
+  color: #ccc;
+}
+.crayon-theme-obsidian .crayon-pre .crayon-c {
+  color: #66747b !important;
+}
+.crayon-theme-obsidian .crayon-pre .crayon-p {
+  color: #a19ba2 !important;
+}
+.crayon-theme-obsidian .crayon-pre .crayon-s {
+  color: #ec7600 !important;
+}
+.crayon-theme-obsidian .crayon-pre .crayon-k {
+  color: #93c763 !important;
+}
+.crayon-theme-obsidian .crayon-pre .crayon-st {
+  color: #93c763 !important;
+}
+.crayon-theme-obsidian .crayon-pre .crayon-r {
+  color: #93c763 !important;
+}
+.crayon-theme-obsidian .crayon-pre .crayon-t {
+  color: #93c763 !important;
+}
+.crayon-theme-obsidian .crayon-pre .crayon-m {
+  color: #93c763 !important;
+}
+.crayon-theme-obsidian .crayon-pre .crayon-ta {
+  color: #aaaaaa !important;
+}
+.crayon-theme-obsidian .crayon-pre .crayon-i {
+  color: #d955c1 !important;
+}
+.crayon-theme-obsidian .crayon-pre .crayon-v {
+  color: #ffffff !important;
+}
+.crayon-theme-obsidian .crayon-pre .crayon-e {
+  color: #678cb1 !important;
+}
+.crayon-theme-obsidian .crayon-pre .crayon-cn {
+  color: #ffcd22 !important;
+}
+.crayon-theme-obsidian .crayon-pre .crayon-o {
+  color: #ffffff !important;
+}
+.crayon-theme-obsidian .crayon-pre .crayon-h {
+  color: #ac99ab !important;
+}
+.crayon-theme-obsidian .crayon-pre .crayon-sy {
+  color: #ffffff !important;
+}
+.crayon-theme-obsidian .crayon-pre .crayon-n {
+  color: #726e73 !important;
+  font-style: italic !important;
+}
+.crayon-theme-obsidian .crayon-pre .crayon-f {
+  color: #d8bfd8 !important;
+}
+.crayon-theme-obsidian .crayon-pre {
+  color: #ffffff !important;
+}
+@font-face {
+  font-family: 'MonacoRegular';
+  src: url('/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.eot');
+  src: url('/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.eot?#iefix') format('embedded-opentype'), url('/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.woff') format('woff'), url('/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.ttf') format('truetype'), url('/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.svg#MonacoRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.crayon-font-monaco * {
+  font-family: Monaco, 'MonacoRegular', 'Courier New', monospace !important;
+}
 .post-text .crayon-syntax {
   margin-bottom: 40px !important;
 }
 .post-text .crayon-syntax .crayon-main .crayon-table td {
   padding: 10px !important;
+}
+@media only screen and (max-width: 479px) {
+  .post-text .crayon-syntax {
+    margin-bottom: 20px;
+  }
 }
 .transload {
   transition: all 0.65s cubic-bezier(0, 0.37, 0.115, 1.2);
@@ -6679,6 +6907,18 @@ header.header.post {
   background-image: none;
   height: 100px;
   padding-top: 29px;
+}
+@media only screen and (max-width: 479px) {
+  header.header.post {
+    height: 80px;
+  }
+  header.header.post .logo {
+    width: 40px;
+    margin-top: -17px;
+  }
+  header.header.post nav {
+    margin-top: -21px;
+  }
 }
 @media only screen and (max-width: 767px) {
   header.header {
@@ -6893,6 +7133,11 @@ footer p.copyright {
   filter: blur(5px);
   transition: all 0.2s ease-out;
 }
+@media only screen and (max-width: 479px) {
+  .content .posts .article img {
+    width: 100%;
+  }
+}
 .content .posts .article .overlay {
   width: 100%;
   height: 100%;
@@ -7022,16 +7267,16 @@ footer p.copyright {
   font-weight: 100;
   margin-top: 16px;
 }
-@media only screen and (max-width: 479px) {
-  .title.bar h1 {
-    display: none;
-  }
-}
 .categories {
   margin-top: 12px;
 }
 .post-footer .categories {
   margin-top: 0;
+}
+@media only screen and (max-width: 479px) {
+  .post-footer .categories {
+    margin-top: -21px;
+  }
 }
 .categories .label {
   padding: 1px 5px;
@@ -7039,6 +7284,11 @@ footer p.copyright {
   border-radius: 50%;
   height: 13px;
   margin-right: 7px;
+}
+@media only screen and (max-width: 479px) {
+  .categories .label {
+    padding: 0 4px;
+  }
 }
 .categories .label.text {
   font-size: 75%;
@@ -7048,6 +7298,11 @@ footer p.copyright {
   margin-right: 25px;
   float: left;
   margin-top: 6px;
+}
+@media only screen and (max-width: 479px) {
+  .categories .label.text {
+    display: none;
+  }
 }
 .tags {
   float: right;
@@ -7268,11 +7523,25 @@ h1.listing-title.workflow span {
   max-width: 1000px;
   margin: 0 auto;
 }
+@media only screen and (max-width: 479px) {
+  .post-content {
+    max-width: 100%;
+    width: 100%;
+  }
+}
 .post-content .col-left {
   float: left;
   border-right: 1px solid #eee;
   width: 750px;
   min-height: 800px;
+}
+@media only screen and (max-width: 479px) {
+  .post-content .col-left {
+    float: none;
+  }
+  .post-content .col-left.list-col {
+    padding: 20px;
+  }
 }
 .post-content .col-left h1.listing-title {
   text-transform: uppercase;
@@ -7289,18 +7558,59 @@ h1.listing-title.workflow span {
   display: inline-block;
   padding: 0 4px;
 }
+@media only screen and (max-width: 479px) {
+  .post-content .col-left h1.listing-title {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .post-content .col-left {
+    width: 100%;
+    float: none;
+    border: 0;
+  }
+}
 .post-content .post-left {
   padding-right: 50px;
+}
+@media only screen and (max-width: 479px) {
+  .post-content .post-left {
+    padding: 20px;
+  }
 }
 .post-content .post-left.listing {
   clear: both;
   float: left;
+}
+@media only screen and (max-width: 479px) {
+  .post-content .post-left.listing {
+    padding: 0;
+    float: none;
+  }
 }
 .post-content .post-sidebar {
   width: 250px;
   float: right;
   height: 100%;
   padding: 50px 0 50px 50px;
+}
+@media only screen and (max-width: 479px) {
+  .post-content .post-sidebar {
+    width: 100%;
+    float: none;
+    position: fixed;
+    padding: 50px;
+    z-index: 5;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    transition: transform 0.1s ease-out;
+  }
+  .post-content .post-sidebar.on {
+    transform: translateX(0);
+    transition: transform 0.05s ease-out;
+  }
 }
 .post-content .post-sidebar .search-wrap {
   position: relative;
@@ -7342,11 +7652,22 @@ h1.listing-title.workflow span {
 .post-content .post-top {
   margin-top: 50px;
 }
+@media only screen and (max-width: 479px) {
+  .post-content .post-top {
+    margin-top: 20px;
+  }
+}
 .post-content .post-top .details {
   color: #bbc5c7;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 100;
+}
+@media only screen and (max-width: 479px) {
+  .post-content .post-top .details.pull-right {
+    float: none !important;
+    font-size: 12px;
+  }
 }
 .post-content .post-top .details .views {
   float: left;
@@ -7362,6 +7683,11 @@ h1.listing-title.workflow span {
   display: block;
   float: left;
   font-size: 12px;
+}
+@media only screen and (max-width: 479px) {
+  .post-content .post-top .details .views span {
+    font-size: 11px;
+  }
 }
 .post-content .post-top .details .time {
   float: left;
@@ -7379,6 +7705,11 @@ h1.listing-title.workflow span {
 }
 .post-content .post-top .author {
   margin-top: -4px;
+}
+@media only screen and (max-width: 479px) {
+  .post-content .post-top .author {
+    display: none;
+  }
 }
 .post-content .post-top .author .avatar {
   background-color: #373739;
@@ -7410,6 +7741,11 @@ h1.listing-title.workflow span {
 .post-content .post-body {
   padding-top: 40px;
   clear: both;
+}
+@media only screen and (max-width: 479px) {
+  .post-content .post-body {
+    padding-top: 20px;
+  }
 }
 .post-content .post-body.listing {
   float: left;
@@ -7443,12 +7779,45 @@ h1.listing-title.workflow span {
   margin-top: 25px;
   margin-bottom: 65px;
 }
+@media only screen and (max-width: 479px) {
+  .post-content .post-body.listing {
+    padding-bottom: 20px;
+  }
+  .post-content .post-body.listing .item-image {
+    float: none;
+    width: 100%;
+  }
+  .post-content .post-body.listing .item-info {
+    float: none;
+    margin-left: 0;
+    width: 100%;
+  }
+  .post-content .post-body.listing .item-info h1 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .post-content .post-body.listing .post-top {
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+}
 .post-content .post-body h1 {
   margin-top: 0;
   margin-bottom: 50px;
   color: #323637;
   font-weight: 600;
   line-height: 40px;
+}
+@media only screen and (max-width: 479px) {
+  .post-content .post-body h1 {
+    line-height: 24px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    letter-spacing: -1px;
+  }
 }
 .post-content .post-body img {
   max-width: 100%;
@@ -7461,10 +7830,20 @@ h1.listing-title.workflow span {
   float: left;
   width: 100%;
 }
+@media only screen and (max-width: 479px) {
+  .post-content .post-footer {
+    padding-bottom: 20px;
+  }
+}
 .post-content .post-footer .share {
   margin-top: -30px;
   position: relative;
   width: 400px;
+}
+@media only screen and (max-width: 479px) {
+  .post-content .post-footer .share {
+    width: 220px;
+  }
 }
 .post-content .post-footer .share .symbol {
   color: #bbc5c7;
@@ -7534,6 +7913,11 @@ h1.listing-title.workflow span {
 .post-content .post-footer .share .symbol.add:hover {
   color: #373739;
 }
+@media only screen and (max-width: 479px) {
+  .post-content .post-footer .share .symbol {
+    font-size: 1.6em;
+  }
+}
 .post-content .post-text {
   clear: both;
   padding-top: 40px;
@@ -7547,6 +7931,16 @@ h1.listing-title.workflow span {
 .post-content .post-text img {
   max-width: 100%;
   border: 5px solid #eee;
+}
+@media only screen and (max-width: 479px) {
+  .post-content .post-text {
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .post-content .post-text p {
+    margin-bottom: 22px;
+  }
 }
 .post-comments {
   margin: 60px 0;

@@ -10,13 +10,13 @@
 			? window.screenTop
 			: screen.top;
 
-		width = window.innerWidth
+		var width = window.innerWidth
 			? window.innerWidth
 			: document.documentElement.clientWidth
 			? document.documentElement.clientWidth
 			: screen.width;
 
-		height = window.innerHeight
+		var height = window.innerHeight
 			? window.innerHeight
 			: document.documentElement.clientHeight
 			? document.documentElement.clientHeight
@@ -30,7 +30,6 @@
 			newWindow.focus();
 		}
 	}
-
 
 	$(function () {
 
@@ -72,6 +71,18 @@
 
 		$('.post-left.listing').on("click", function(){
 			window.location = $(this).data('url');
+		});
+
+		$('body').on('swipeleft', function(){
+			if( ! $('.post-sidebar').hasClass('on')) {
+				$('.post-sidebar').addClass('on');
+			}
+		});
+
+		$('.post-sidebar').on('swiperight', function(){
+			if($('.post-sidebar').hasClass('on')) {
+				$('.post-sidebar').removeClass('on');
+			}
 		});
 
 	});

@@ -4,7 +4,7 @@
 
 <div class="post-content">
 	<div class="post-sidebar"><?php get_sidebar(); ?></div>
-	<div class="col-left">
+	<div class="col-left list-col">
 
 
 		<h1 class="listing-title"><?php echo $wp_query->found_posts; ?>
