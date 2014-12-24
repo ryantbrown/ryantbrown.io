@@ -1,5 +1,6 @@
 (function ($, root, undefined) {
 
+	// dual screen pop up window
 	var pop = function(url, title, w, h) {
 
 		var dualScreenLeft = window.screenLeft != undefined
@@ -31,22 +32,17 @@
 		}
 	}
 
-	$(function () {
+	$(function(){
 
 		'use strict';
 
-		$(window).bind("load", function() {
-			$('.title').addClass('on');
-			$('nav').addClass('on');
-			$('.logo').addClass('on');
-			$('.content').addClass('on');
-		});
-
+		// override share links and open in pop up window
 		$('.share a').on("click", function(evt){
 			evt.preventDefault();
-			pop($(this).attr('href'), $(this).attr('title'), 600, 450); //$(this).data('w'), $(this).data('h'));
+			pop($(this).attr('href'), $(this).attr('title'), 600, 450);
 		});
 
+		// home page auto type
 		setTimeout(function(){
 			$(".typed").typed({
 				strings: [
@@ -66,24 +62,28 @@
 			});
 		}, 2000);
 
+		// enable tooltips
 		$('[data-toggle="tooltip"]').tooltip();
 
-
+		// activate listing links
 		$('.post-left.listing').on("click", function(){
 			window.location = $(this).data('url');
 		});
 
-		//$('body').on('swipeleft', function(){
-		//	if( ! $('.post-sidebar').hasClass('on')) {
-		//		$('.post-sidebar').addClass('on');
-		//	}
-		//});
-        //
-		//$('.post-sidebar').on('swiperight', function(){
-		//	if($('.post-sidebar').hasClass('on')) {
-		//		$('.post-sidebar').removeClass('on');
-		//	}
-		//});
+		// swipe menu
+		$(".post-content").swipe({
+			swipeLeft:function(){
+				if( ! $('.post-sidebar').hasClass('on')) {
+					$('.post-sidebar').addClass('on');
+				}
+			},
+			swipeRight: function(){
+				if($('.post-sidebar').hasClass('on')) {
+					$('.post-sidebar').removeClass('on');
+				}
+			},
+			allowPageScroll: "auto"
+		});
 
 	});
 	
