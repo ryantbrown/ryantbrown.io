@@ -6847,7 +6847,7 @@ URL: http://rakcheev.ru/
 .post-text .crayon-syntax .crayon-main .crayon-table td {
   padding: 10px !important;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 480px) {
   .post-text .crayon-syntax {
     margin-bottom: 20px;
   }
@@ -6902,60 +6902,52 @@ header.header {
   background-repeat: no-repeat;
   height: 500px;
   padding-top: 45px;
+  height: 250px;
 }
 header.header.post {
   background-image: none;
   height: 100px;
   padding-top: 29px;
+  height: 80px;
+  width: 40px;
 }
-@media only screen and (max-width: 479px) {
-  header.header.post {
-    height: 80px;
-  }
+@media only screen and (max-width: 480px) {
   header.header.post .logo {
-    width: 40px;
     margin-top: -17px;
   }
   header.header.post nav {
     margin-top: -21px;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   header.header {
     height: 350px;
   }
 }
-@media only screen and (max-width: 479px) {
-  header.header {
-    height: 250px;
-    padding-top: 0;
-  }
+@media only screen and (max-width: 480px) {
+  padding-top: 0;
 }
 .container {
   max-width: 1050px;
   padding: 10px 20px;
   margin: 0 auto;
+  padding: 13px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .container {
     max-width: 100%;
-  }
-}
-@media only screen and (max-width: 479px) {
-  .container {
-    padding: 13px;
   }
 }
 .logo {
   float: left;
   width: 65px;
   margin-top: -14px;
+  width: 35px;
+  margin-left: 10px;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 480px) {
   .logo {
-    width: 35px;
     margin-top: 5px;
-    margin-left: 10px;
   }
 }
 .logo a img {
@@ -6968,77 +6960,65 @@ header.header.post {
 nav {
   float: right;
 }
-@media only screen and (max-width: 479px) {
-  nav ul {
-    margin-top: 10px;
+nav ul {
+  margin-top: 10px;
+}
+@media only screen and (max-width: 480px) {
+  nav {
     margin-right: 10px;
   }
-}
-nav ul li {
-  display: block;
-  float: left;
-  margin-right: 25px;
-}
-@media only screen and (max-width: 479px) {
-  nav ul li {
+  nav li {
+    display: block;
+    float: left;
+    margin-right: 25px;
     margin-right: 18px;
   }
-}
-nav ul li a {
-  display: block;
-  color: #fff;
-  opacity: 0.75;
-  transition: opacity 0.1s ease-out;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 100;
-}
-@media only screen and (max-width: 479px) {
-  nav ul li a {
+  nav li a {
+    display: block;
+    color: #fff;
+    opacity: 0.75;
+    transition: opacity 0.1s ease-out;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 100;
     font-size: 14px;
-  }
-  nav ul li a:first-child {
     margin-right: -10px;
   }
-}
-nav ul li a:hover {
-  opacity: 1;
-  color: #fff;
-  text-decoration: none;
-}
-nav ul li a.active {
-  opacity: 1;
-  color: #fff;
-}
-nav ul li a.symbol {
-  font-size: 2.5em;
-  margin-top: -23px;
-  margin-right: -23px;
-  transition: opacity 0.2s ease-out;
-}
-nav ul li a.symbol:hover {
-  color: #fff;
-  text-decoration: none;
-}
-nav ul li a.symbol:active {
-  color: #fff;
-  text-decoration: none;
-}
-@media only screen and (max-width: 479px) {
-  nav ul li a.symbol {
+  nav li a:hover {
+    opacity: 1;
+    color: #fff;
+    text-decoration: none;
+  }
+  nav li a.active {
+    opacity: 1;
+    color: #fff;
+  }
+  nav li a.symbol {
+    font-size: 2.5em;
+    margin-top: -23px;
+    margin-right: -23px;
+    transition: opacity 0.2s ease-out;
     font-size: 2em;
-    margin-top: -18px;
     margin-right: -20px;
+  }
+  nav li a.symbol:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  nav li a.symbol:active {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+@media only screen and (max-width: 480px) and only screen and (max-width: 480px) {
+  nav li a.symbol {
+    margin-top: -18px;
   }
 }
 header.header .title {
   text-align: center;
   margin-top: 18.5%;
-}
-@media only screen and (max-width: 479px) {
-  header.header .title {
-    margin-top: 90px;
-  }
+  margin-top: 90px;
 }
 header.header .title h2 {
   font-size: 2em;
@@ -7046,15 +7026,15 @@ header.header .title h2 {
   color: #a5a5a5;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   margin-bottom: 0;
+  font-size: 1.4em;
+  line-height: 1.5em;
 }
 header.header .title h2 span {
   color: #fff;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 480px) {
   header.header .title h2 {
-    font-size: 1.4em;
-    padding: 0 10px;
-    line-height: 1.5em;
+    padding: 0 35px;
   }
 }
 header.header .title p {
@@ -7063,11 +7043,7 @@ header.header .title p {
   font-weight: 100;
   margin-top: 5px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-}
-@media only screen and (max-width: 479px) {
-  header.header .title p {
-    display: none;
-  }
+  display: none;
 }
 footer {
   padding: 17px 10px 10px 10px;
@@ -7093,11 +7069,7 @@ footer p.copyright {
 }
 .content .posts {
   margin-bottom: 40px;
-}
-@media only screen and (max-width: 479px) {
-  .content .posts {
-    margin-bottom: 15px;
-  }
+  margin-bottom: 15px;
 }
 .content .posts .article {
   text-decoration: none;
@@ -7106,7 +7078,11 @@ footer p.copyright {
   background-size: cover;
   border-radius: 8px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  overflow-x: hidden;
+}
+.content .posts .article.col-md-4 {
+  display: block;
+  margin-bottom: 15px;
 }
 @media (min-width: 992px) {
   .content .posts .article.col-md-4 {
@@ -7118,11 +7094,9 @@ footer p.copyright {
 .content .posts .article.col-md-4.last {
   margin-right: 0;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 480px) {
   .content .posts .article.col-md-4 {
-    display: block;
     float: none;
-    margin-bottom: 15px;
   }
 }
 .content .posts .article img {
@@ -7132,11 +7106,7 @@ footer p.copyright {
   z-index: 2;
   filter: blur(5px);
   transition: all 0.2s ease-out;
-}
-@media only screen and (max-width: 479px) {
-  .content .posts .article img {
-    width: 100%;
-  }
+  width: 100%;
 }
 .content .posts .article .overlay {
   width: 100%;
@@ -7254,11 +7224,7 @@ footer p.copyright {
   width: 100%;
   height: 100px;
   padding: 14px;
-}
-@media only screen and (max-width: 479px) {
-  .title.bar {
-    margin-bottom: 15px;
-  }
+  margin-bottom: 15px;
 }
 .title.bar h1 {
   font-size: 18px;
@@ -7272,11 +7238,7 @@ footer p.copyright {
 }
 .post-footer .categories {
   margin-top: 0;
-}
-@media only screen and (max-width: 479px) {
-  .post-footer .categories {
-    margin-top: -21px;
-  }
+  margin-top: -21px;
 }
 .categories .label {
   padding: 1px 5px;
@@ -7284,11 +7246,7 @@ footer p.copyright {
   border-radius: 50%;
   height: 13px;
   margin-right: 7px;
-}
-@media only screen and (max-width: 479px) {
-  .categories .label {
-    padding: 0 4px;
-  }
+  padding: 0 4px;
 }
 .categories .label.text {
   font-size: 75%;
@@ -7298,11 +7256,7 @@ footer p.copyright {
   margin-right: 25px;
   float: left;
   margin-top: 6px;
-}
-@media only screen and (max-width: 479px) {
-  .categories .label.text {
-    display: none;
-  }
+  display: none;
 }
 .tags {
   float: right;
@@ -7522,83 +7476,344 @@ h1.listing-title.workflow span {
 .post-content {
   max-width: 1000px;
   margin: 0 auto;
+  max-width: 100%;
 }
-@media only screen and (max-width: 479px) {
-  .post-content {
-    max-width: 100%;
-    width: 100%;
-  }
-}
-.post-content .col-left {
-  float: left;
-  border-right: 1px solid #eee;
-  width: 750px;
-  min-height: 800px;
-}
-@media only screen and (max-width: 479px) {
-  .post-content .col-left {
+@media only screen and (max-width: 480px) {
+  width: 100%;
+  
+  .col-left {
+    float: left;
+    border-right: 1px solid #eee;
+    width: 750px;
+    min-height: 800px;
     float: none;
-  }
-  .post-content .col-left.list-col {
     padding: 20px;
-  }
-}
-.post-content .col-left h1.listing-title {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 100;
-  color: #6C6C74;
-  margin-bottom: 0;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 10px;
-  margin-top: 50px;
-}
-.post-content .col-left h1.listing-title span {
-  font-weight: 700;
-  display: inline-block;
-  padding: 0 4px;
-}
-@media only screen and (max-width: 479px) {
-  .post-content .col-left h1.listing-title {
-    margin-top: 20px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  .post-content .col-left {
     width: 100%;
-    float: none;
     border: 0;
   }
-}
-.post-content .post-left {
-  padding-right: 50px;
-}
-@media only screen and (max-width: 479px) {
-  .post-content .post-left {
+  .col-left h1.listing-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 100;
+    color: #6C6C74;
+    margin-bottom: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-top: 20px;
+  }
+  .col-left h1.listing-title span {
+    font-weight: 700;
+    display: inline-block;
+    padding: 0 4px;
+  }
+  .post-left {
+    padding-right: 50px;
     padding: 20px;
   }
-}
-.post-content .post-left.listing {
-  clear: both;
-  float: left;
-}
-@media only screen and (max-width: 479px) {
-  .post-content .post-left.listing {
+  .post-left.listing {
+    clear: both;
+    float: left;
     padding: 0;
+  }
+  .post-sidebar {
+    width: 250px;
+    float: right;
+    height: 100%;
+    padding: 50px 0 50px 50px;
+    width: 100%;
+    position: fixed;
+  }
+  .post-sidebar .search-wrap {
+    position: relative;
+    margin-bottom: 50px;
+    margin-left: -2px;
+  }
+  .post-sidebar .search-wrap .search-input {
+    border: 1px solid #c9d1d3;
+    border-radius: 20px;
+    padding: 8px 40px 8px 16px;
+    color: #414c4f;
+    outline: 0;
+    font-size: 14px;
+    width: 100%;
+    font-weight: 100;
+    transition: border-color 0.2s ease-out;
+  }
+  .post-sidebar .search-wrap .search-input:focus {
+    border-color: #939B9D;
+  }
+  .post-sidebar .search-wrap .search-submit {
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    outline: 0;
+  }
+  .post-sidebar .search-wrap .search-submit:focus {
+    outline: 0;
+  }
+  .post-sidebar .search-wrap .search-submit i {
+    color: #ddd;
+    transition: color 0.2s ease-out;
+  }
+  .post-sidebar .search-wrap .search-submit:hover i {
+    color: #414c4f;
+  }
+  .post-top {
+    margin-top: 50px;
+    margin-top: 20px;
+  }
+  .post-top .details {
+    color: #bbc5c7;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+  .post-top .details.pull-right {
+    float: none !important;
+  }
+  .post-top .details .views {
+    float: left;
+    margin-right: 20px;
+  }
+  .post-top .details .views i {
+    display: block;
+    float: left;
+    margin-right: 8px;
+    padding-top: 1px;
+  }
+  .post-top .details .views span {
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-size: 11px;
+  }
+  .post-top .details .time {
+    float: left;
+  }
+  .post-top .details .time i {
+    display: block;
+    float: left;
+    margin-right: 8px;
+    padding-top: 1px;
+  }
+  .post-top .details .time span {
+    display: block;
+    float: left;
+    font-size: 12px;
+  }
+  .post-top .author {
+    margin-top: -4px;
+    display: none;
+  }
+  .post-top .author .avatar {
+    background-color: #373739;
+    padding: 2px;
+    overflow: hidden;
+    width: 29px;
+    height: 29px;
+    display: block;
+    float: left;
+    border-radius: 50%;
+  }
+  .post-top .author .avatar img {
+    width: 25px;
+    height: 25px;
+  }
+  .post-top .author .written {
+    font-size: 13px;
+    font-weight: 100;
+    color: #9ea6a8;
+    display: block;
+    float: left;
+    margin-left: 10px;
+    padding-top: 4px;
+  }
+  .post-top .author .written strong {
+    font-weight: 100;
+    color: #5e6669;
+  }
+  .post-body {
+    padding-top: 40px;
+    clear: both;
+    padding-top: 20px;
+  }
+  .post-body.listing {
+    float: left;
+    width: 100%;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #eee;
+    opacity: 0.75;
+    transition: opacity 0.2s ease-out;
+    cursor: pointer;
+    padding-bottom: 20px;
+  }
+  .post-body.listing:hover {
+    opacity: 1;
+  }
+  .post-body.listing .item-image {
+    float: left;
+    width: 200px;
+  }
+  .post-body.listing .item-info {
+    float: left;
+    margin-left: 25px;
+    width: 470px;
+  }
+  .post-body.listing .item-info h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .post-body.listing h1 {
+    margin-bottom: 25px;
+  }
+  .post-body.listing .post-top {
+    margin-top: 25px;
+    margin-bottom: 65px;
+  }
+  .post-body.listing .item-image .item-info {
+    float: none;
+    margin-left: 0;
+    width: 100%;
+  }
+  .post-body.listing .item-image .item-info h1 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .post-body.listing .item-image .post-top {
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+  .post-body h1 {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: #323637;
+    font-weight: 600;
+    line-height: 40px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .post-body img {
+    max-width: 100%;
+    border: 1px solid #eee;
+  }
+  .post-footer {
+    margin-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #eee;
+    float: left;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .post-footer .share {
+    margin-top: -30px;
+    position: relative;
+    width: 400px;
+    width: 220px;
+  }
+  .post-footer .share .symbol {
+    color: #bbc5c7;
+    font-size: 3em;
+    transition: text-shadow, background-color 0.2s ease-out;
+    margin-right: 6px;
+    border-bottom-color: white;
+    border: 1px solid #f2f2f2;
+    font-size: 1.6em;
+  }
+  .post-footer .share .symbol:before {
+    margin-right: 0;
+  }
+  .post-footer .share .symbol:hover {
+    text-decoration: none;
+    color: #a7b4b7;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    background-color: #f2f2f2;
+  }
+  .post-footer .share .symbol:active {
+    text-decoration: none;
+  }
+  .post-footer .share .symbol.twitter {
+    color: #11aae1;
+  }
+  .post-footer .share .symbol.twitter:hover {
+    color: #11aae1;
+  }
+  .post-footer .share .symbol.facebook {
+    color: #2e3390;
+  }
+  .post-footer .share .symbol.facebook:hover {
+    color: #2e3390;
+  }
+  .post-footer .share .symbol.reddit {
+    color: #FF4006;
+  }
+  .post-footer .share .symbol.reddit:hover {
+    color: #FF4006;
+  }
+  .post-footer .share .symbol.google {
+    color: #d8352c;
+  }
+  .post-footer .share .symbol.google:hover {
+    color: #d8352c;
+  }
+  .post-footer .share .symbol.pinterest {
+    color: #d00b25;
+  }
+  .post-footer .share .symbol.pinterest:hover {
+    color: #d00b25;
+  }
+  .post-footer .share .symbol.tumblr {
+    color: #2D4768;
+  }
+  .post-footer .share .symbol.tumblr:hover {
+    color: #2D4768;
+  }
+  .post-footer .share .symbol.linkedin {
+    color: #00659a;
+  }
+  .post-footer .share .symbol.linkedin:hover {
+    color: #00659a;
+  }
+  .post-footer .share .symbol.add {
+    color: #373739;
+  }
+  .post-footer .share .symbol.add:hover {
+    color: #373739;
+  }
+  .post-text {
+    clear: both;
+    padding-top: 40px;
+    font-weight: 100;
+    line-height: 32px;
+    color: #323637;
+    padding-top: 20px;
+    line-height: 26px;
+  }
+  .post-text p {
+    margin-bottom: 45px;
+  }
+  .post-text img {
+    max-width: 100%;
+    border: 5px solid #eee;
+  }
+}
+@media only screen and (max-width: 480px) and only screen and (max-width: 480px) {
+  .col-left {
     float: none;
   }
 }
-.post-content .post-sidebar {
-  width: 250px;
-  float: right;
-  height: 100%;
-  padding: 50px 0 50px 50px;
-}
-@media only screen and (max-width: 479px) {
-  .post-content .post-sidebar {
-    width: 100%;
+@media only screen and (max-width: 480px) and only screen and (max-width: 480px) {
+  .post-left {
     float: none;
-    position: fixed;
+  }
+}
+@media only screen and (max-width: 480px) and only screen and (max-width: 480px) {
+  .post-sidebar {
+    float: none;
     padding: 50px;
     z-index: 5;
     background-color: #fff;
@@ -7607,338 +7822,35 @@ h1.listing-title.workflow span {
     transform: translateX(100%);
     transition: transform 0.1s ease-out;
   }
-  .post-content .post-sidebar.on {
+  .post-sidebar.on {
     transform: translateX(0);
     transition: transform 0.05s ease-out;
   }
 }
-.post-content .post-sidebar .search-wrap {
-  position: relative;
-  margin-bottom: 50px;
-  margin-left: -2px;
-}
-.post-content .post-sidebar .search-wrap .search-input {
-  border: 1px solid #c9d1d3;
-  border-radius: 20px;
-  padding: 8px 40px 8px 16px;
-  color: #414c4f;
-  outline: 0;
-  font-size: 14px;
-  width: 100%;
-  font-weight: 100;
-  transition: border-color 0.2s ease-out;
-}
-.post-content .post-sidebar .search-wrap .search-input:focus {
-  border-color: #939B9D;
-}
-.post-content .post-sidebar .search-wrap .search-submit {
-  background-color: transparent;
-  border: 0;
-  position: absolute;
-  top: 6px;
-  right: 8px;
-  outline: 0;
-}
-.post-content .post-sidebar .search-wrap .search-submit:focus {
-  outline: 0;
-}
-.post-content .post-sidebar .search-wrap .search-submit i {
-  color: #ddd;
-  transition: color 0.2s ease-out;
-}
-.post-content .post-sidebar .search-wrap .search-submit:hover i {
-  color: #414c4f;
-}
-.post-content .post-top {
-  margin-top: 50px;
-}
-@media only screen and (max-width: 479px) {
-  .post-content .post-top {
-    margin-top: 20px;
-  }
-}
-.post-content .post-top .details {
-  color: #bbc5c7;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 100;
-}
-@media only screen and (max-width: 479px) {
-  .post-content .post-top .details.pull-right {
-    float: none !important;
+@media only screen and (max-width: 480px) and only screen and (max-width: 480px) {
+  .post-top .details {
     font-size: 12px;
   }
 }
-.post-content .post-top .details .views {
-  float: left;
-  margin-right: 20px;
-}
-.post-content .post-top .details .views i {
-  display: block;
-  float: left;
-  margin-right: 8px;
-  padding-top: 1px;
-}
-.post-content .post-top .details .views span {
-  display: block;
-  float: left;
-  font-size: 12px;
-}
-@media only screen and (max-width: 479px) {
-  .post-content .post-top .details .views span {
-    font-size: 11px;
-  }
-}
-.post-content .post-top .details .time {
-  float: left;
-}
-.post-content .post-top .details .time i {
-  display: block;
-  float: left;
-  margin-right: 8px;
-  padding-top: 1px;
-}
-.post-content .post-top .details .time span {
-  display: block;
-  float: left;
-  font-size: 12px;
-}
-.post-content .post-top .author {
-  margin-top: -4px;
-}
-@media only screen and (max-width: 479px) {
-  .post-content .post-top .author {
-    display: none;
-  }
-}
-.post-content .post-top .author .avatar {
-  background-color: #373739;
-  padding: 2px;
-  overflow: hidden;
-  width: 29px;
-  height: 29px;
-  display: block;
-  float: left;
-  border-radius: 50%;
-}
-.post-content .post-top .author .avatar img {
-  width: 25px;
-  height: 25px;
-}
-.post-content .post-top .author .written {
-  font-size: 13px;
-  font-weight: 100;
-  color: #9ea6a8;
-  display: block;
-  float: left;
-  margin-left: 10px;
-  padding-top: 4px;
-}
-.post-content .post-top .author .written strong {
-  font-weight: 100;
-  color: #5e6669;
-}
-.post-content .post-body {
-  padding-top: 40px;
-  clear: both;
-}
-@media only screen and (max-width: 479px) {
-  .post-content .post-body {
-    padding-top: 20px;
-  }
-}
-.post-content .post-body.listing {
-  float: left;
-  width: 100%;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #eee;
-  opacity: 0.75;
-  transition: opacity 0.2s ease-out;
-  cursor: pointer;
-}
-.post-content .post-body.listing:hover {
-  opacity: 1;
-}
-.post-content .post-body.listing .item-image {
-  float: left;
-  width: 200px;
-}
-.post-content .post-body.listing .item-info {
-  float: left;
-  margin-left: 25px;
-  width: 470px;
-}
-.post-content .post-body.listing .item-info h1 {
-  font-size: 24px;
-  line-height: 32px;
-}
-.post-content .post-body.listing h1 {
-  margin-bottom: 25px;
-}
-.post-content .post-body.listing .post-top {
-  margin-top: 25px;
-  margin-bottom: 65px;
-}
-@media only screen and (max-width: 479px) {
-  .post-content .post-body.listing {
-    padding-bottom: 20px;
-  }
-  .post-content .post-body.listing .item-image {
+@media only screen and (max-width: 480px) and only screen and (max-width: 480px) {
+  .post-body.listing .item-image {
+    opacity: 1;
     float: none;
     width: 100%;
   }
-  .post-content .post-body.listing .item-info {
-    float: none;
-    margin-left: 0;
-    width: 100%;
-  }
-  .post-content .post-body.listing .item-info h1 {
-    font-size: 18px;
-    line-height: 26px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-  }
-  .post-content .post-body.listing .post-top {
-    margin-bottom: 25px;
-    margin-top: 10px;
-  }
 }
-.post-content .post-body h1 {
-  margin-top: 0;
-  margin-bottom: 50px;
-  color: #323637;
-  font-weight: 600;
-  line-height: 40px;
-}
-@media only screen and (max-width: 479px) {
-  .post-content .post-body h1 {
-    line-height: 24px;
+@media only screen and (max-width: 480px) and only screen and (max-width: 480px) {
+  .post-body h1 {
     font-size: 18px;
-    margin-bottom: 20px;
     font-weight: 400;
     letter-spacing: -1px;
   }
 }
-.post-content .post-body img {
-  max-width: 100%;
-  border: 1px solid #eee;
-}
-.post-content .post-footer {
-  margin-top: 40px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #eee;
-  float: left;
-  width: 100%;
-}
-@media only screen and (max-width: 479px) {
-  .post-content .post-footer {
-    padding-bottom: 20px;
-  }
-}
-.post-content .post-footer .share {
-  margin-top: -30px;
-  position: relative;
-  width: 400px;
-}
-@media only screen and (max-width: 479px) {
-  .post-content .post-footer .share {
-    width: 220px;
-  }
-}
-.post-content .post-footer .share .symbol {
-  color: #bbc5c7;
-  font-size: 3em;
-  transition: text-shadow, background-color 0.2s ease-out;
-  margin-right: 6px;
-  border-bottom-color: white;
-  border: 1px solid #f2f2f2;
-}
-.post-content .post-footer .share .symbol:before {
-  margin-right: 0;
-}
-.post-content .post-footer .share .symbol:hover {
-  text-decoration: none;
-  color: #a7b4b7;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  background-color: #f2f2f2;
-}
-.post-content .post-footer .share .symbol:active {
-  text-decoration: none;
-}
-.post-content .post-footer .share .symbol.twitter {
-  color: #11aae1;
-}
-.post-content .post-footer .share .symbol.twitter:hover {
-  color: #11aae1;
-}
-.post-content .post-footer .share .symbol.facebook {
-  color: #2e3390;
-}
-.post-content .post-footer .share .symbol.facebook:hover {
-  color: #2e3390;
-}
-.post-content .post-footer .share .symbol.reddit {
-  color: #FF4006;
-}
-.post-content .post-footer .share .symbol.reddit:hover {
-  color: #FF4006;
-}
-.post-content .post-footer .share .symbol.google {
-  color: #d8352c;
-}
-.post-content .post-footer .share .symbol.google:hover {
-  color: #d8352c;
-}
-.post-content .post-footer .share .symbol.pinterest {
-  color: #d00b25;
-}
-.post-content .post-footer .share .symbol.pinterest:hover {
-  color: #d00b25;
-}
-.post-content .post-footer .share .symbol.tumblr {
-  color: #2D4768;
-}
-.post-content .post-footer .share .symbol.tumblr:hover {
-  color: #2D4768;
-}
-.post-content .post-footer .share .symbol.linkedin {
-  color: #00659a;
-}
-.post-content .post-footer .share .symbol.linkedin:hover {
-  color: #00659a;
-}
-.post-content .post-footer .share .symbol.add {
-  color: #373739;
-}
-.post-content .post-footer .share .symbol.add:hover {
-  color: #373739;
-}
-@media only screen and (max-width: 479px) {
-  .post-content .post-footer .share .symbol {
-    font-size: 1.6em;
-  }
-}
-.post-content .post-text {
-  clear: both;
-  padding-top: 40px;
-  font-weight: 100;
-  line-height: 32px;
-  color: #323637;
-}
-.post-content .post-text p {
-  margin-bottom: 45px;
-}
-.post-content .post-text img {
-  max-width: 100%;
-  border: 5px solid #eee;
-}
-@media only screen and (max-width: 479px) {
-  .post-content .post-text {
-    padding-top: 20px;
+@media only screen and (max-width: 480px) and only screen and (max-width: 480px) {
+  .post-text {
     font-size: 14px;
-    line-height: 26px;
   }
-  .post-content .post-text p {
+  .post-text p {
     margin-bottom: 22px;
   }
 }
