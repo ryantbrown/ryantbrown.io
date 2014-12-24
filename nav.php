@@ -10,7 +10,7 @@
         <li><a href="http://twitter.com/r_t_brown" class="symbol" target="_blank">&#xe086;</a></li>
         <li><a href="http://github.com/ryantbrown" class="symbol" target="_blank">&#xe036;</a></li>
         <li><a href="https://dribbble.com/ryantbrown" class="symbol" target="_blank">&#xe021;</a></li>
-        <li><a href="mailto:me@ryantbrown.io" class="symbol">&#xe024;</a></li>
+<!--        <li><a href="mailto:me@ryantbrown.io" class="symbol">&#xe024;</a></li>-->
     </ul>
 </nav>
 
