@@ -6899,9 +6899,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .php .xml {
   opacity: 0.5;
 }
-code.hljs {
-  padding: 0 1.5em 1.5em 1.5em;
-}
 .apache .hljs-tag,
 .asciidoc .hljs-strong,
 .bash .hljs-variable,
@@ -6924,29 +6921,9 @@ code.hljs {
 .tex .hljs-command {
   font-weight: normal;
 }
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  pre code.hljs {
-    font-size: 18px;
-  }
-}
 body {
   font-family: Roboto, 'Helvetica Neue', Arial, Helvetica, sans-serif;
   color: #34373b;
-}
-pre {
-  margin-bottom: 40px;
-  padding: 0;
-  border-radius: 0;
-}
-@media only screen and (max-width: 480px) {
-  pre {
-    margin: 20px 0;
-  }
-}
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  pre {
-    margin: 30px 0;
-  }
 }
 .symbol,
 a.symbol:before {
@@ -8178,4 +8155,33 @@ h1.listing-title.workflow span {
 }
 .post-comments {
   margin: 60px 0;
+}
+div.code {
+  overflow: auto;
+  width: 100%;
+  max-width: 100%;
+}
+pre {
+  margin-bottom: 40px;
+  padding: 0;
+  border-radius: 0;
+  width: 1000px;
+}
+@media only screen and (max-width: 480px) {
+  pre {
+    margin: 20px 0;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  pre {
+    margin: 30px 0;
+  }
+}
+code.hljs {
+  padding: 0 1.5em 1.5em 1.5em;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  pre code.hljs {
+    font-size: 18px;
+  }
 }
