@@ -8170,11 +8170,13 @@ pre {
 @media only screen and (max-width: 480px) {
   pre {
     margin: 0 0 20px 0 !important;
+    font-size: 12px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   pre {
     margin: 0 0 30px 0 !important;
+    font-size: 13px;
   }
 }
 code.hljs {
