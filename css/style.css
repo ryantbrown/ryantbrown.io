@@ -6924,8 +6924,10 @@ code.hljs {
 .tex .hljs-command {
   font-weight: normal;
 }
-.transload {
-  transition: all 0.65s cubic-bezier(0, 0.37, 0.115, 1.2);
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  pre code.hljs {
+    font-size: 18px;
+  }
 }
 body {
   font-family: Roboto, 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -6938,8 +6940,12 @@ pre {
 }
 @media only screen and (max-width: 480px) {
   pre {
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin: 20px 0;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  pre {
+    margin: 30px 0;
   }
 }
 .symbol,
@@ -6993,7 +6999,7 @@ header.header.post {
     margin-top: -21px;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   header.header {
     height: 350px;
   }
@@ -7009,7 +7015,7 @@ header.header.post {
   padding: 10px 20px;
   margin: 0 auto;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .container {
     max-width: 100%;
   }
@@ -7159,6 +7165,12 @@ footer p.copyright {
 .content {
   padding-top: 50px;
 }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .content {
+    width: 100%;
+    padding: 10px 30px;
+  }
+}
 .content .sidebar {
   float: right;
   width: 25%;
@@ -7170,6 +7182,13 @@ footer p.copyright {
 @media only screen and (max-width: 480px) {
   .content .posts {
     margin-bottom: 15px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .content .posts {
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
   }
 }
 .content .posts .article {
@@ -7199,6 +7218,18 @@ footer p.copyright {
     overflow: hidden;
   }
 }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .content .posts .article.col-md-4 {
+    width: 48%;
+    display: block;
+    float: left;
+    margin-left: 4%;
+    margin-bottom: 4%;
+  }
+  .content .posts .article.col-md-4:nth-child(odd) {
+    margin-left: 0;
+  }
+}
 .content .posts .article img {
   position: absolute;
   top: 0;
@@ -7208,6 +7239,11 @@ footer p.copyright {
   transition: all 0.2s ease-out;
 }
 @media only screen and (max-width: 480px) {
+  .content .posts .article img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .content .posts .article img {
     width: 100%;
   }
@@ -7341,6 +7377,11 @@ footer p.copyright {
   font-weight: 100;
   margin-top: 16px;
 }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .title.bar h1 {
+    font-size: 22px;
+  }
+}
 .categories {
   margin-top: 12px;
 }
@@ -7364,6 +7405,11 @@ footer p.copyright {
     padding: 0 4px;
   }
 }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .categories .label {
+    padding: 2px 6px;
+  }
+}
 .categories .label.text {
   font-size: 75%;
   text-transform: uppercase;
@@ -7376,6 +7422,11 @@ footer p.copyright {
 @media only screen and (max-width: 480px) {
   .categories .label.text {
     display: none;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .categories .label.text {
+    font-size: 95%;
   }
 }
 .tags {
@@ -7617,6 +7668,16 @@ h1.listing-title.workflow span {
     padding: 20px;
   }
 }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .post-content .col-left {
+    float: none;
+    border: 0;
+    width: 100%;
+  }
+  .post-content .col-left.list-col {
+    padding: 20px;
+  }
+}
 .post-content .col-left h1.listing-title {
   text-transform: uppercase;
   font-size: 14px;
@@ -7637,6 +7698,12 @@ h1.listing-title.workflow span {
     margin-top: 20px;
   }
 }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .post-content .col-left h1.listing-title {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+}
 @media only screen and (max-width: 480px) {
   .post-content .col-left {
     width: 100%;
@@ -7652,11 +7719,22 @@ h1.listing-title.workflow span {
     padding: 20px;
   }
 }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .post-content .post-left {
+    padding: 20px;
+  }
+}
 .post-content .post-left.listing {
   clear: both;
   float: left;
 }
 @media only screen and (max-width: 480px) {
+  .post-content .post-left.listing {
+    padding: 0;
+    float: none;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .post-content .post-left.listing {
     padding: 0;
     float: none;
@@ -7669,6 +7747,29 @@ h1.listing-title.workflow span {
   padding: 50px 0 50px 50px;
 }
 @media only screen and (max-width: 480px) {
+  .post-content .post-sidebar {
+    width: 100%;
+    float: none;
+    position: fixed;
+    padding: 50px;
+    z-index: 99;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    transform: translateX(100%);
+    transition: transform 0.2s cubic-bezier(0.08, 0.555, 0.005, 0.985);
+  }
+  .post-content .post-sidebar.on {
+    transform: translateX(0);
+    transition: transform 0.4s cubic-bezier(0.08, 0.555, 0.005, 0.985);
+  }
+  .post-content .post-sidebar.half {
+    transition: transform 0.8s cubic-bezier(0.08, 0.555, 0.005, 0.985);
+    transform: translateX(50%);
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .post-content .post-sidebar {
     width: 100%;
     float: none;
@@ -7748,6 +7849,11 @@ h1.listing-title.workflow span {
     font-size: 12px;
   }
 }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .post-content .post-top .details.pull-right {
+    font-size: 18px;
+  }
+}
 .post-content .post-top .details .views {
   float: left;
   margin-right: 20px;
@@ -7766,6 +7872,11 @@ h1.listing-title.workflow span {
 @media only screen and (max-width: 480px) {
   .post-content .post-top .details .views span {
     font-size: 11px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .post-content .post-top .details .views span {
+    font-size: 16px;
   }
 }
 .post-content .post-top .details .time {
@@ -7817,6 +7928,11 @@ h1.listing-title.workflow span {
   font-weight: 100;
   color: #5e6669;
 }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .post-content .post-top .author .written {
+    font-size: 16px;
+  }
+}
 .post-content .post-body {
   padding-top: 40px;
   clear: both;
@@ -7824,6 +7940,11 @@ h1.listing-title.workflow span {
 @media only screen and (max-width: 480px) {
   .post-content .post-body {
     padding-top: 20px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .post-content .post-body {
+    padding-top: 30px;
   }
 }
 .post-content .post-body.listing {
@@ -7883,6 +8004,11 @@ h1.listing-title.workflow span {
     margin-top: 10px;
   }
 }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .post-content .post-body.listing {
+    opacity: 1;
+  }
+}
 .post-content .post-body h1 {
   margin-top: 0;
   margin-bottom: 50px;
@@ -7899,6 +8025,14 @@ h1.listing-title.workflow span {
     letter-spacing: -1px;
   }
 }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .post-content .post-body h1 {
+    line-height: 38px;
+    font-size: 30px;
+    margin-bottom: 35px;
+    font-weight: 600;
+  }
+}
 .post-content .post-body img {
   max-width: 100%;
   border: 1px solid #eee;
@@ -7913,6 +8047,11 @@ h1.listing-title.workflow span {
 @media only screen and (max-width: 480px) {
   .post-content .post-footer {
     padding-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .post-content .post-footer {
+    padding-bottom: 30px;
   }
 }
 .post-content .post-footer .share {
@@ -8025,6 +8164,16 @@ h1.listing-title.workflow span {
   }
   .post-content .post-text p {
     margin-bottom: 22px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .post-content .post-text {
+    padding-top: 30px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .post-content .post-text p {
+    margin-bottom: 25px;
   }
 }
 .post-comments {

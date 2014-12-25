@@ -29,10 +29,10 @@
     <div class="content-bg">
         <div class="container content">
             <div class="posts">
-                <?php get_template_part('grid'); ?>
+                <?php get_template_part('grid'); /* ?>
                 <div class="pagination">
                     <?php get_template_part('pagination'); ?>
-                </div>
+                </div> */ ?>
             </div>
         </div>
     </div>

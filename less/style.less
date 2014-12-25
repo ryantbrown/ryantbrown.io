@@ -4,21 +4,14 @@
 @import 'bootstrap';
 @import 'syntax';
 
-@desktop:   ~"only screen and (min-width: 768px)";
-@tablet:    ~"only screen and (max-width: 767px)";
+@tablet:    ~"only screen and (min-width: 481px) and (max-width: 768px)";
 @phone:    ~"only screen and (max-width: 480px)";
+
 @dark: #34373b;
 @red: #fc4e59;
 @green: #22bb8e;
 @blue: #0cbfd4;
 @grey: #9ea6a8;
-
-
-
-
-.transload {
-  transition: all .65s cubic-bezier(0.00, 0.370, 0.115, 1.20);
-}
 
 body {
   font-family: Roboto, 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -30,8 +23,10 @@ pre {
   padding: 0;
   border-radius: 0;
   @media @phone {
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin: 20px 0;
+  }
+  @media @tablet {
+    margin: 30px 0;
   }
 }
 
@@ -254,6 +249,10 @@ footer {
 
 .content {
   padding-top: 50px;
+  @media @tablet {
+    width: 100%;
+    padding: 10px 30px;
+  }
   .sidebar {
     float: right;
     width: 25%;
@@ -263,6 +262,11 @@ footer {
     margin-bottom: 40px;
     @media @phone {
       margin-bottom: 15px;
+    }
+    @media @tablet {
+      float: left;
+      width: 100%;
+      margin-bottom: 0;
     }
     .article {
       text-decoration: none;
@@ -288,6 +292,16 @@ footer {
           margin-bottom: 15px;
           overflow: hidden;
         }
+        @media @tablet {
+          width: 48%;
+          display: block;
+          float: left;
+          margin-left: 4%;
+          margin-bottom: 4%;
+          &:nth-child(odd) {
+            margin-left: 0;
+          }
+        }
       }
       img {
         position: absolute;
@@ -297,6 +311,9 @@ footer {
         filter: blur(5px);
         transition: all .2s ease-out;
         @media @phone {
+          width: 100%;
+        }
+        @media @tablet {
           width: 100%;
         }
       }
@@ -445,7 +462,9 @@ footer {
     letter-spacing: 0px;
     font-weight: 100;
     margin-top: 16px;
-
+    @media @tablet {
+      font-size: 22px;
+    }
   }
 }
 
@@ -469,6 +488,9 @@ footer {
   @media @phone {
     padding: 0 4px;
   }
+  @media @tablet {
+    padding: 2px 6px;
+  }
 }
 .categories .label.text {
   font-size: 75%;
@@ -480,6 +502,9 @@ footer {
   margin-top: 6px;
   @media @phone {
     display: none;
+  }
+  @media @tablet {
+    font-size: 95%;
   }
 }
 .tags {
@@ -633,6 +658,14 @@ h1.listing-title {
         padding: 20px;
       }
     }
+    @media @tablet {
+      float: none;
+      border: 0;
+      width: 100%;
+      &.list-col {
+        padding: 20px;
+      }
+    }
 
     h1.listing-title {
       text-transform: uppercase;
@@ -651,6 +684,10 @@ h1.listing-title {
       @media @phone {
         margin-top: 20px;
       }
+      @media @tablet {
+        margin-top: 30px;
+        font-size: 18px;
+      }
     }
     @media @phone {
       width: 100%;
@@ -666,10 +703,17 @@ h1.listing-title {
     @media @phone {
       padding: 20px;
     }
+    @media @tablet {
+      padding: 20px;
+    }
     &.listing {
       clear: both;
       float: left;
       @media @phone {
+        padding: 0;
+        float: none;
+      }
+      @media @tablet {
         padding: 0;
         float: none;
       }
@@ -683,6 +727,27 @@ h1.listing-title {
     padding: 50px 0 50px 50px;
 
     @media @phone {
+      width: 100%;
+      float: none;
+      position: fixed;
+      padding: 50px;
+      z-index: 99;
+      background-color: #fff;
+      top: 0;
+      left: 0;
+      overflow-y: scroll;
+      transform: translateX(100%);
+      transition: transform .2s cubic-bezier(0.0800, 0.555, 0.00500, 0.985);
+      &.on {
+        transform: translateX(0);
+        transition: transform .4s cubic-bezier(0.0800, 0.555, 0.00500, 0.985);
+      }
+      &.half {
+        transition: transform .8s cubic-bezier(0.0800, 0.555, 0.00500, 0.985);
+        transform: translateX(50%);
+      }
+    }
+    @media @tablet {
       width: 100%;
       float: none;
       position: fixed;
@@ -755,10 +820,14 @@ h1.listing-title {
       font-size: 14px;
       text-transform: uppercase;
       font-weight: 100;
+
       &.pull-right {
         @media @phone {
           float: none !important;
           font-size: 12px;
+        }
+        @media @tablet {
+          font-size: 18px;
         }
       }
       .views {
@@ -769,6 +838,9 @@ h1.listing-title {
           display: block; float: left; font-size: 12px;
           @media @phone {
             font-size: 11px;
+          }
+          @media @tablet {
+            font-size: 16px;
           }
         }
       }
@@ -808,6 +880,9 @@ h1.listing-title {
           font-weight: 100;
           color: darken(@grey, 25%);
         }
+        @media @tablet {
+          font-size: 16px;
+        }
       }
     }
   }
@@ -816,6 +891,9 @@ h1.listing-title {
     clear: both;
     @media @phone {
       padding-top: 20px;
+    }
+    @media @tablet {
+      padding-top: 30px;
     }
 
     &.listing {
@@ -872,6 +950,9 @@ h1.listing-title {
           margin-top: 10px;
         }
       }
+      @media @tablet {
+        opacity: 1;
+      }
     }
     h1 {
       margin-top: 0;
@@ -885,6 +966,12 @@ h1.listing-title {
         margin-bottom: 20px;
         font-weight: 400;
         letter-spacing: -1px;
+      }
+      @media @tablet {
+        line-height: 38px;
+        font-size: 30px;
+        margin-bottom: 35px;
+        font-weight: 600;
       }
     }
     img {
@@ -900,6 +987,9 @@ h1.listing-title {
     width: 100%;
     @media @phone {
       padding-bottom: 20px;
+    }
+    @media @tablet {
+      padding-bottom: 30px;
     }
     .share {
       margin-top: -15px;
@@ -965,6 +1055,14 @@ h1.listing-title {
       line-height: 26px;
       p {
         margin-bottom: 22px;
+      }
+    }
+    @media @tablet {
+      padding-top: 30px;
+      font-size: 18px;
+      line-height: 30px;
+      p {
+        margin-bottom: 25px;
       }
     }
   }
