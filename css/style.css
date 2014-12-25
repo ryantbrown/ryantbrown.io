@@ -8165,16 +8165,16 @@ pre {
   margin-bottom: 40px;
   padding: 0;
   border-radius: 0;
-  width: 1000px;
+  width: 800px;
 }
 @media only screen and (max-width: 480px) {
   pre {
-    margin: 20px 0;
+    margin-botom: 20px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   pre {
-    margin: 30px 0;
+    margin-botom: 30px;
   }
 }
 code.hljs {
