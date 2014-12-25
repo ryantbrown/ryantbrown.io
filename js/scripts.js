@@ -72,23 +72,32 @@
 			window.location = $(this).data('url');
 		});
 
-		// show the sidebar to let user know it exists
-		var tease_swipe = setInterval(function(){
-			// only show if its mobile
-			if($('.post-sidebar').css('position') == 'fixed') {
-				$('.post-sidebar').addClass('half');
-				setTimeout(function(){
-					$('.post-sidebar').removeClass('half');
-				}, 500);
-			}
-		}, 10000);
+		// cookie is stored if they have used the sidebar in the last 7 days
+		if($.cookie('teased') === undefined) {
+			// show the sidebar to let user know it exists
+			var tease_swipe = setInterval(function(){
+				// only show if its mobile
+				if($('.post-sidebar').css('position') == 'fixed') {
+					$('.post-sidebar').addClass('half');
+					setTimeout(function(){
+						$('.post-sidebar').removeClass('half');
+					}, 500);
+				}
+			}, 10000);
+		}
 
 		// swipe menu
 		$(".post-content").swipe({
 			swipeLeft:function(){
 				if( ! $('.post-sidebar').hasClass('on')) {
 					$('.post-sidebar').addClass('on');
+					// stop the tease interval
 					clearInterval(tease_swipe);
+					// set cookie to disable tease on future page views
+					$.cookie('teased', 'yes', {
+						expires: 7,
+						path: '/'
+					});
 				}
 			},
 			swipeRight: function(){
