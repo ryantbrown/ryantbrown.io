@@ -8127,7 +8127,7 @@ h1.listing-title.workflow span {
   color: #323637;
 }
 .post-content .post-text p {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 .post-content .post-text img {
   max-width: 100%;
@@ -8160,9 +8160,9 @@ div.code {
   overflow: auto;
   width: 100%;
   max-width: 100%;
+  margin-bottom: 30px;
 }
 pre {
-  margin-bottom: 40px;
   padding: 0;
   border-radius: 0;
   width: 800px;
