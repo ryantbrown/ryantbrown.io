@@ -1,20 +1,17 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "strict": false,
+    "types": ["vite/client"],
     "module": "ESNext",
     "target": "es2016",
     "lib": ["DOM", "ESNext"],
-    "strict": true,
     "esModuleInterop": true,
     "incremental": false,
     "skipLibCheck": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "noUnusedLocals": true,
-    "forceConsistentCasingInFileNames": true,
-    "paths": {
-      "~/*": ["src/*"]
-    }
+    "forceConsistentCasingInFileNames": true
   },
-  "exclude": ["dist", "node_modules"]
+  "exclude": ["dist", "public", "node_modules"]
 }
