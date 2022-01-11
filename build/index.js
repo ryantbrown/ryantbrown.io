@@ -22,7 +22,8 @@ tinify.key = process.env.TINY_KEY?.toString();
 
     console.log('Building Images....');
     fs.readdirSync('src/assets').forEach((file) => {
-        tinify.fromFile(`src/assets/${file}`).toFile(`dist/assets/${file}`);
+        fs.copyFileSync(`src/assets/${file}`, `dist/assets/${file}`);
+        // tinify.fromFile(`src/assets/${file}`).toFile(`dist/assets/${file}`);
     });
 
     console.log('Building HTML....');
