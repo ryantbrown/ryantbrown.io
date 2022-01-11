@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link {
+    @apply transition-all border-transparent border-b-2 hover:border-ryan hover:pb-1 bg-gray-100 hover:bg-white text-ryan;
+}
