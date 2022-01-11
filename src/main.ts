@@ -1,6 +1,6 @@
-import { createApp } from "vue";
-import Page from "./Page.vue";
-import "virtual:windi.css";
-import "./style/index.css";
+import { createApp } from 'vue';
+import Page from './Page.vue';
+import 'virtual:windi.css';
+import './style/index.css';
 
-createApp(Page).mount("#root");
+createApp(Page).mount('#root');

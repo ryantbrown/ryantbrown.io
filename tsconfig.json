@@ -1,17 +1,18 @@
 {
-  "compilerOptions": {
-    "strict": false,
-    "types": ["vite/client"],
-    "module": "ESNext",
-    "target": "es2016",
-    "lib": ["DOM", "ESNext"],
-    "esModuleInterop": true,
-    "incremental": false,
-    "skipLibCheck": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "noUnusedLocals": true,
-    "forceConsistentCasingInFileNames": true
-  },
-  "exclude": ["dist", "public", "node_modules"]
+    "compilerOptions": {
+        "strict": false,
+
+        "types": ["vite/client"],
+        "module": "ESNext",
+        "target": "es2016",
+        "lib": ["DOM", "ESNext"],
+        "esModuleInterop": true,
+        "incremental": false,
+        "skipLibCheck": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "noUnusedLocals": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "exclude": ["dist", "public", "node_modules"]
 }
