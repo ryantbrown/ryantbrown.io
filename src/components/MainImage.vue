@@ -13,10 +13,12 @@
     import { ref } from 'vue';
     const curImage = ref(1);
     const mainImage = ref(null);
-    const total = 5;
+    const total = Object.keys(
+        import.meta.globEager('../assets/main/*.jpg')
+    ).length;
 
     const swapItem = () => {
-        mainImage.value.classList.toggle('opacity-');
+        mainImage.value.classList.toggle('opacity-0');
         curImage.value += 1;
 
         if (curImage.value >= total) {
@@ -25,7 +27,7 @@
         setTimeout(() => mainImage.value.classList.toggle('opacity-0'), 100);
     };
 
-    setInterval(() => swapItem(), 2000);
+    setInterval(() => swapItem(), 5000);
 </script>
 <style lang="postcss">
     .list-fade-enter,
@@ -37,7 +39,7 @@
     }
 
     .ci {
-        transition: all 0.25s ease;
+        transition: all 0.3s ease;
         @apply absolute mx-auto;
     }
 </style>
