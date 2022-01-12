@@ -5,7 +5,7 @@
         <img
             ref="mainImage"
             class="ci h-56 w-full object-cover lg:absolute lg:h-full"
-            :src="`/src/assets/main/${curImage}.jpg`"
+            :src="`../assets/main/${curImage}.jpg`"
             alt="Build" />
     </div>
 </template>
